@@ -708,13 +708,7 @@
     <!-- main-js -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
         
-    <div class="ad-popup" id="adPopup">
-        <button class="ad-popup-close" id="closeAdPopupBtn" aria-label="Close">&times;</button>
-        <img src="assets/img/ads/sample-ad.jpg" alt="Special Offer">
-        <h3>Special Offer!</h3>
-        <p>Book now and get 20% off your stay at Kevins Bed & Breakfast.<br>Limited time only!</p>
-        <a href="#" target="_blank">Learn More</a>
-    </div>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var closeBtn = document.getElementById('closeAdPopupBtn');

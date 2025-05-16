@@ -29,69 +29,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <style>
-        .ad-popup {
-            position: fixed;
-            left: 32px;
-            bottom: 32px;
-            z-index: 10000;
-            background: #fff;
-            border-radius: 16px;
-            max-width: 350px;
-            width: 90vw;
-            padding: 32px 24px 24px 24px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            text-align: center;
-            animation: ad-pop 0.3s ease;
-            transition: opacity 0.2s, transform 0.2s;
-        }
-        @keyframes ad-pop {
-            from { transform: scale(0.9); opacity: 0; }
-            to   { transform: scale(1); opacity: 1; }
-        }
-        .ad-popup-close {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            background: transparent;
-            border: none;
-            font-size: 1.5rem;
-            color: #333;
-            cursor: pointer;
-        }
-        .ad-popup img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 16px;
-        }
-        .ad-popup h3 {
-            margin: 0 0 8px 0;
-            font-size: 1.25rem;
-            color: #007bff;
-        }
-        .ad-popup p {
-            margin-bottom: 16px;
-            color: #444;
-        }
-        .ad-popup a {
-            display: inline-block;
-            background: #007bff;
-            color: #fff;
-            padding: 8px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .ad-popup a:hover {
-            background: #0056b3;
-        }
-        @media (max-width: 600px) {
-            .ad-popup {
-                left: 8px;
-                bottom: 8px;
-                padding: 18px 6px 12px 6px;
-                max-width: 95vw;
-            }
-        }
+        
     </style>
 </head>
 

@@ -1,13 +1,20 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 Route::get('/gallery', function () {
@@ -22,19 +29,24 @@ Route::get('/restaurants', function () {
     return view('restaurants');
 })->name('restaurants');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/tour-packages', function () {
+    return view('tour-packages');
+})->name('tour-packages');
 
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('/tour-packages', function () {
-    return view('tour-packages');
-})->name('tour-packages');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
-// Blog details route (placeholder)
-Route::get('/blog/{slug}', function ($slug) {
-    return "Blog details for: " . $slug;
+Route::get('/blog-details', function () {
+    return view('blog-details');
 })->name('blog-details');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+require __DIR__.'/auth.php';

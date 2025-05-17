@@ -33,19 +33,15 @@
                             </div>
                             <div class="rx-items-contact">
                                 <ul>
-                                    <li>
-                                        <a href="rooms.html">Rooms</a>
-                                    </li>
-                                    <li>
-                                        <a href="restaurants.html">Nearby Restaurants</a>
-                                    </li>
-                                    <li>
-                                        <a href="gallery.html">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true">Book Now</a>
-                                    </li>
-                                </ul>
+    <li><a class="nav-link" href="{{ route('home') }}">Home</a></li>
+    <li><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
+    <li><a class="nav-link" href="{{ route('rooms') }}">Rooms</a></li>
+    <li><a class="nav-link" href="{{ route('restaurants') }}">Nearby Restaurants</a></li>
+    <li><a class="nav-link" href="https://www.google.com/maps/@11.6710447,92.7264715,3a,90y,289.86h,88.83t/data=!3m8!1e1!3m6!1sAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H%3Dw114-h120-k-no-pi-0-ya71.64512-ro-0-fo100!7i5376!8i2688?shorturl=1" target="_blank" rel="noopener">Virtual Tour</a></li>
+    <li><a class="nav-link" href="{{ route('tour-packages') }}">Special Tour Packages</a></li>
+    <li><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+    <li><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+</ul>
                             </div>
                         </div>
                     </div>
@@ -79,16 +75,12 @@
                             </div>
                             <div class="rx-items-contact">
                                 <ul>
+                                    <li><a class="nav-link" href="{{ route('home') }}">About Us</a></li>
+                                    <li><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                                     <li>
-                                        <a href="about.html">About Us</a>
+                                        <a href="https://www.google.com/maps/dir//99%2F5,+J.N.Road,+Near+Airtel+Office,+744102,+Delanipur,+Sri+Vijaya+Puram,+Andaman+and+Nicobar+Islands+744102/@11.6710499,92.6441325,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x308895a65ad4e3f7:0x729b7978491608a6!2m2!1d92.7265344!2d11.6710616?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">Directions</a>
                                     </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Directions</a>
-                                    </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="faq.html">FAQ</a>
                                     </li>
                                     <li>
@@ -96,7 +88,7 @@
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)">Terms & Conditions</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>

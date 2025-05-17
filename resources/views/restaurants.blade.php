@@ -131,7 +131,7 @@
                                         <h5>New Lighthouse Restaurant</h5>
                                         <ul>
                                             <li>Cuisine: Seafood, Indian</li>
-                                            <li>Distance: 5 mins walk</li>
+                                            <li>Distance: 5 mins ride, 15 mins walk</li>
                                             <li>Popular for: Fresh seafood</li>
                                         </ul>
                                     </div>
@@ -160,7 +160,7 @@
                                         <h5>Sea Food Delight</h5>
                                         <ul>
                                             <li>Cuisine: Seafood, Local</li>
-                                            <li>Distance: 8 mins walk</li>
+                                            <li>Distance: 2 mins drive, 7 mins walk</li>
                                             <li>Popular for: Local seafood specialties</li>
                                         </ul>
                                     </div>
@@ -194,7 +194,7 @@
                                         <h5>Annapurna Restaurant</h5>
                                         <ul>
                                             <li>Cuisine: South Indian, North Indian</li>
-                                            <li>Distance: 3 mins walk</li>
+                                            <li>Distance: 5 mins drive, 15 mins walk</li>
                                             <li>Popular for: Pure vegetarian food</li>
                                         </ul>
                                     </div>
@@ -223,7 +223,7 @@
                                         <h5>Hotel Blue Sea</h5>
                                         <ul>
                                             <li>Cuisine: Pure Vegetarian</li>
-                                            <li>Distance: 7 mins walk</li>
+                                            <li>Distance: 5 mins drive, 15 mins walk</li>
                                             <li>Popular for: Gujarati & Jain food</li>
                                         </ul>
                                     </div>
@@ -257,7 +257,7 @@
                                         <h5>Driftwood</h5>
                                         <ul>
                                             <li>Cuisine: Multi-cuisine</li>
-                                            <li>Distance: 10 mins walk</li>
+                                            <li>Distance: 2 mins drive, 5 mins walk</li>
                                             <li>Popular for: Fine dining experience</li>
                                         </ul>
                                     </div>
@@ -286,7 +286,7 @@
                                         <h5>Haywizz</h5>
                                         <ul>
                                             <li>Cuisine: Multi-cuisine</li>
-                                            <li>Distance: 12 mins walk</li>
+                                            <li>Distance: 2 mins drive, 5 mins walk</li>
                                             <li>Popular for: Modern ambiance</li>
                                         </ul>
                                     </div>
@@ -315,8 +315,37 @@
                                         <h5>ADI Bengali Hotel</h5>
                                         <ul>
                                             <li>Cuisine: Bengali, Indian</li>
-                                            <li>Distance: 6 mins walk</li>
+                                            <li>Distance: 2 mins drive, 6 mins walk</li>
                                             <li>Popular for: Authentic Bengali cuisine</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="rx-rooms-main-box">
+                        <div class="rooms-box-front">
+                            <img src="assets/img/restaurants/milky-way.jpg" alt="Milky Way Restaurant" style="height: 250px; object-fit: cover;">
+                            <div class="content-wrap">
+                                <div class="inner-contact">
+                                    <h4>Milky Way Restaurant</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rooms-box-back">
+                            <img src="assets/img/restaurants/milky-way.jpg" alt="Milky Way Restaurant">
+                            <div class="content-wrap">
+                                <div class="box-overlay"></div>
+                                <div class="inner-back-side">
+                                    <div class="sub-inner-contact">
+                                        <h5>Milky Way Restaurant</h5>
+                                        <ul>
+                                            <li>Cuisine: Multi-cuisine, Indian, Chinese</li>
+                                            <li>Distance: 2 mins drive, 5 mins walk</li>
+                                            <li>Popular for: Friendly staff and delicious food</li>
                                         </ul>
                                     </div>
                                 </div>

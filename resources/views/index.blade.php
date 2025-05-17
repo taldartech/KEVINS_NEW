@@ -266,30 +266,7 @@
 
 
                         <!-- Slide 5 - Restaurant -->
-                        <div class="rx-slide slide-9">
-                            <img src="{{ asset('assets/img/hero/hero9.jpeg') }}" alt="Boats on a calm river with forest, Andaman" class="banner-arrow-img">
-                            <div class="rx-hero-contact">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="inner-contact slider-animation">
-                                                <p>Dining Excellence</p>
-                                                <h2>Explore <span>Local</span> <span>Cuisine</span></h2>
-                                                <div class="booking-now">
-                                                    <div class="ico">
-                                                        <i class="ri-phone-line"></i>
-                                                    </div>
-                                                    <div class="booking-text">
-                                                        <p>Book Now</p>
-                                                        <span>993 328 3649</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                     
 
 
                         <!-- Slide 5 - Restaurant -->
@@ -355,22 +332,65 @@
                     <div class="rx-about-contact">
                         <div class="rx-banner">
                             <!-- <p>The Royalx Hotel</p> -->
-                            <h4>Why <span>Kevins Bed & Breakfast</span> ?</h4>
+                            <h4>Welcome to <span>Kevins Bed & Breakfast</span> </h4>
                         </div>
                         <div class="inner-contact">
-                            <p>Welcome to KEVINS Bed & Breakfast, your home away from home in the tranquil 
-                                paradise of the Andaman & Nicobar Islands. Nestled in the heart of Port Blair, 
-                                our cozy haven offers the perfect blend of comfort, cleanliness, and personalized service. 
-                                Whether you're a family on vacation, a couple on a romantic getaway, or a solo traveler 
-                                seeking peace and adventure, KEVINS Bed & Breakfast ensures a memorable stay tailored to your needs.</p>
-                            <p>We are committed to creating unique travel experiences. We offer thoughtfully designed rooms, 
-                                warm hospitality, and proximity to Port Blair's major attractions.</p>
+                            <p>A Trusted Homestay Experience in the Heart of Port Blair</p>
+                            <p>Planning a journey through the Andaman Islands? Start it right at KEVINS Bed &amp; Breakfast — a warm,
+                            welcoming, and affordable homestay in Port Blair, ideal for families, couples, and solo travelers alike.</p>
+                            <p>Located just 10 minutes from Veer Savarkar International Airport, KEVINS offers a convenient base for
+                            exploring not only Port Blair’s rich heritage but also the pristine beauty of Havelock (Swaraj Dweep) and Neil
+                            Island (Shaheed Dweep) — two of the most sought-after destinations in the Andamans.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="section-about padding-tb-50">
+        <div class="container">
+            <div class="row mb-minus-24">
+                <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="rx-about-contact">
+                        <div class="rx-banner">
+                            <!-- <p>The Royalx Hotel</p> -->
+                            <h4>Why choose <span>Kevins Bed & Breakfast</span>?</h4>
+                        </div>
+                        <div class="inner-contact">
+                        <ul>
+                            <li><strong>Prime Location</strong> – Close to key attractions like Cellular Jail, Corbyn’s Cove Beach, Aberdeen Bazaar and the Phoenix Bay/Haddo Jetty — your gateway to Havelock and Neil Islands.</li>
+                            <li><strong>Comfortable, Well-Appointed Rooms</strong> – Clean, cozy, and fully equipped for families, couples, and solo travelers.</li>
+                            <li><strong>Complimentary Breakfast</strong> – Begin your day with a thoughtfully prepared homemade breakfast, included with your stay.</li>
+                            <li><strong>Great Value for Money</strong> – Perfect for guests looking for a budget hotel in Port Blair without compromising on quality.</li>
+                            <li><strong>Family-Friendly Environment</strong> – A great choice for those searching for a guesthouse near the beach in Port Blair or a family-friendly stay in Andaman. Whether you're catching a ferry to Havelock for water adventures or heading to Neil Island for quiet beaches, our location and travel assistance make KEVINS the ideal starting point.</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="rx-about-contact">
+                        <div class="rx-banner">
+                            <h4><span>Experience</span> the <span>Difference</span> at <span>KEVINS</span> </h4>
+                        </div>
+                        <div class="inner-contact">
+                            <p>At KEVINS, we go beyond accommodation. Whether you're planning a relaxing holiday, a romantic getaway, or a short business visit, our team is here to make your stay stress-free and memorable.</p>
+                            <p>Guests love our personalized service, peaceful ambiance, and thoughtful amenities — making us one of the best choices for a Port Blair homestay or bed and breakfast in Andaman near the ferry terminal to Havelock and Neil.
+                            </p>
+                            <p > <strong>Ready to Stay with Us?</strong>
+                            Whether you’re exploring colonial history in Port Blair, diving in Havelock’s turquoise waters, or unwinding on Neil’s tranquil shores — KEVINS Bed &amp; Breakfast is where your Andaman story begins.<br>
+                            Don’t just visit Port Blair — experience it with KEVINS.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank" class="rx-btn-two">Book Your Stay Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Services -->
     <section class="section-services padding-tb-50">

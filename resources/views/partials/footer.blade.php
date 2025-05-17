@@ -9,7 +9,7 @@
                     <div class="col-lg-3 col-sm-6 col-12 mb-24 footer-order-1">
                         <div class="rx-social-media">
                             <div class="rx-logo">
-                                <img src="/assets/img/logo/logo.png" alt="Kevin Logo" style="">
+                                <img src="/assets/img/logo/logo.png" alt="Kevin Logo" style="width: 120px;">
                                 <h1 style="font-weight: 700; color: #fff;">Kevins Bed & Breakfast</h1>
                             </div>
                             <div class="inner-contact">
@@ -134,3 +134,8 @@
             </div>
         </div>
     </footer>
+<!-- WhatsApp Chat Widget -->
+<a aria-label="Chat on WhatsApp" href="https://wa.me/919933283649?text=Welcome%20to%20Kevins%20B%26B%20-%20Port%20Blair" target="_blank" id="whatsapp-chat-widget" style="position: fixed; right: 10px; bottom: 10px; z-index: 9999; box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 50%;">
+    <img alt="Chat on WhatsApp" src="/assets/img/whatsapp.png" style="height:60px;width:60px;" />
+</a>
+

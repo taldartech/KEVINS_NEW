@@ -1073,11 +1073,11 @@ header .rx-header {
   width: 100%;
   position: absolute;
   z-index: 16;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 header .header-fixed {
   width: 100%;
-  padding: 10px 0 !important;
+  padding: 5px 0 !important;
   position: fixed !important;
   top: 0 !important;
   background-color: rgba(0, 0, 0, 0.9) !important;

@@ -49,4 +49,8 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);
+});
+
 require __DIR__.'/auth.php';

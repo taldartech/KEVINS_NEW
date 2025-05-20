@@ -17,20 +17,26 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
-
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            <div class="flex">
+                @if (request()->is('admin*'))
+                    @include('layouts.admin-sidebar')
+                @endif
+                <div class="flex-1 min-h-screen ml-0" style="margin-left: 16rem;">
+                    <!-- Page Heading -->
+                    @isset($header)
+                        <header class="bg-white shadow">
+                            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                                {{ $header }}
+                            </div>
+                        </header>
+                    @endisset
+                    <!-- Page Content -->
+                    <main>
+                        @yield('content')
+                        {{ $slot ?? '' }}
+                    </main>
+                </div>
+            </div>
         </div>
     </body>
 </html>

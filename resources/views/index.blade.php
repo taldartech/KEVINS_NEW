@@ -301,52 +301,11 @@
         </div>
     </section>
 
+    @include('partials.sf_booking_form')
+
     <!-- About -->
-    <section class="section-about padding-tb-50">
-        <div class="container">
-            <div class="row mb-minus-24">
-                <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="rx-about-img">
-                        <img src="{{ asset('assets/img/Hall.png') }}" alt="about" class="rx-white-img">
-                        <div class="rx-rounded-circle">
-                            <a href="about.html">
-                                <svg viewBox="0 0 100 100" width="100" height="100">
-                                    <defs>
-                                        <path id="circle" d=" M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0">
-                                        </path>
-                                    </defs>
-                                    <text>
-                                        <textPath xlink:href="#circle">
-                                            About Us - About Us - About -
-                                        </textPath>
-                                    </text>
-                                </svg>
-                                <div class="inner-contact">
-                                    <i class="ri-arrow-right-up-line"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="rx-about-contact">
-                        <div class="rx-banner">
-                            <!-- <p>The Royalx Hotel</p> -->
-                            <h4>Welcome to <span>Kevins Bed & Breakfast</span> </h4>
-                        </div>
-                        <div class="inner-contact">
-                            <p>A Trusted Homestay Experience in the Heart of Port Blair</p>
-                            <p>Planning a journey through the Andaman Islands? Start it right at KEVINS Bed &amp; Breakfast — a warm,
-                            welcoming, and affordable homestay in Port Blair, ideal for families, couples, and solo travelers alike.</p>
-                            <p>Located just 10 minutes from Veer Savarkar International Airport, KEVINS offers a convenient base for
-                            exploring not only Port Blair’s rich heritage but also the pristine beauty of Havelock (Swaraj Dweep) and Neil
-                            Island (Shaheed Dweep) — two of the most sought-after destinations in the Andamans.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+     
+    
     <section class="section-about padding-tb-50">
         <div class="container">
             <div class="row mb-minus-24">
@@ -391,6 +350,7 @@
     </section>
 
     
+
 
     <!-- Services -->
     <section class="section-services padding-tb-50">

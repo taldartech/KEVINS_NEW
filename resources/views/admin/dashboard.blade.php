@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container py-5">
+    Ronak
     <h1 class="mb-4">Admin Dashboard</h1>
     <div class="list-group">
         <a href="{{ route('admin.rooms.index') }}" class="list-group-item list-group-item-action">Manage Rooms</a>

@@ -49,6 +49,11 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::get('/nearby-attractions', function () {
+    return view('nearby-attractions');
+})->name('nearby-attractions');
+
+
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);
 });

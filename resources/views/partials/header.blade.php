@@ -28,6 +28,8 @@
                                 <li class="nav-item rx-dropdown">
                                     <a class="nav-link rx-dropdown-item">Attractions</a>
                                     <ul class="rx-dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Historical Places</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('nearby-attractions') }}">Nearby Attractions</a></li>
                                         <li><a class="dropdown-item" href="{{ route('restaurants') }}">Nearby Restaurants</a></li>
                                     </ul>
                                 </li>

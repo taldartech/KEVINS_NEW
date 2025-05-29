@@ -53,6 +53,12 @@ Route::get('/nearby-attractions', function () {
     return view('nearby-attractions');
 })->name('nearby-attractions');
 
+Route::get('/historical-places', function () {
+    return view('historical-places');
+})->name('historical-places');
+
+
+
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);

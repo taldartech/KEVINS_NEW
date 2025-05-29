@@ -926,8 +926,9 @@
                                                     <ul>
                                                         <li>Cellular Jail (5 mins) - Historic colonial prison</li>
                                                         <li>Ross Island (Ferry ride) - British-era ruins</li>
-                                                        <li>Chatham Saw Mill (5 mins) - Asia's oldest mill</li>
-                                                        <li>Flag Point (10 mins) - First flag hoisting site</li>
+                                                        <li>Viper Island (10 mins) – Where History Speaks Softly</li>
+                                                        <li>Japanese Bunkers (15 mins) – WWII Relics</li>
+                                                        <li> Mount Manipur (1.5 hrs) (formerly Mount Harriet)</li>
                                                     </ul>
                                                 </div>
                                             </div>

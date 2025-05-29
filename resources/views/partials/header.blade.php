@@ -25,8 +25,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('rooms') }}">Rooms</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('restaurants') }}">Attractions</a>
+                                <li class="nav-item rx-dropdown">
+                                    <a class="nav-link rx-dropdown-item">Attractions</a>
+                                    <ul class="rx-dropdown-menu">
+                                        <li><a class="dropdown-item" href="{{ route('restaurants') }}">Nearby Restaurants</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="https://www.google.com/maps/@11.6710447,92.7264715,3a,90y,289.86h,88.83t/data=!3m8!1e1!3m6!1sAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H%3Dw114-h120-k-no-pi-0-ya71.64512-ro-0-fo100!7i5376!8i2688?shorturl=1" target="_blank" rel="noopener">Virtual Tour</a>

@@ -141,34 +141,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="rx-rooms-main-box">
-                        <div class="rooms-box-front">
-                            <img src="assets/img/restaurants/new-lighthouse.jpg" alt="New Lighthouse Restaurant" style="height: 250px; object-fit: cover;">
-                            <div class="content-wrap">
-                                <div class="inner-contact">
-                                    <h4>New Lighthouse Restaurant</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rooms-box-back">
-                            <img src="assets/img/restaurants/new-lighthouse.jpg" alt="New Lighthouse Restaurant">
-                            <div class="content-wrap">
-                                <div class="box-overlay"></div>
-                                <div class="inner-back-side">
-                                    <div class="sub-inner-contact">
-                                        <h5>New Lighthouse Restaurant</h5>
-                                        <ul>
-                                            <li>Cuisine: Seafood, Indian</li>
-                                            <li>Distance: 5 mins ride, 15 mins walk</li>
-                                            <li>Popular for: Fresh seafood</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
                     <div class="rx-rooms-main-box">
@@ -191,6 +164,36 @@
                                             <li>Cuisine: Seafood, Local</li>
                                             <li>Distance: 2 mins drive, 7 mins walk</li>
                                             <li>Popular for: Local seafood specialties</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="rx-rooms-main-box">
+                        <div class="rooms-box-front">
+                            <img src="assets/img/restaurants/ananda-restaurant.jpg" alt="ananda restaurant" style="height: 250px; object-fit: cover;">
+                            <div class="content-wrap">
+                                <div class="inner-contact">
+                                    <h4>Ananda Restaurant</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rooms-box-back">
+                            <img src="assets/img/restaurants/ananda-restaurant.jpg" alt="ananda restaurant">
+                            <div class="content-wrap">
+                                <div class="box-overlay"></div>
+                                <div class="inner-back-side">
+                                    <div class="sub-inner-contact">
+                                        <h5>Ananda Restaurant</h5>
+                                        <ul>
+                                            <li>Cuisine: North Indian, South Indian</li>
+                                            <li>Distance: 5 mins ride, 15 mins walk</li>
+                                            <li>Popular for: seafood, and thalis</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -266,7 +269,7 @@
                 <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
                     <div class="rx-rooms-main-box">
                         <div class="rooms-box-front">
-                            <img src="assets/img/restaurants/icy-spicy.jpg" alt="Hotel Blue Sea" style="height: 250px; object-fit: cover;">
+                            <img src="assets/img/restaurants/icy-spicy.jpg" alt="Icy Spicy restaurant" style="height: 250px; object-fit: cover;">
                             <div class="content-wrap">
                                 <div class="inner-contact">
                                     <h4>Icy Spicy (Pure Veg)</h4>
@@ -274,7 +277,7 @@
                             </div>
                         </div>
                         <div class="rooms-box-back">
-                            <img src="assets/img/restaurants/blue-sea.jpg" alt="Hotel Blue Sea">
+                            <img src="assets/img/restaurants/icy-spicy.jpg" alt="Icy Spicy restaurant">
                             <div class="content-wrap">
                                 <div class="box-overlay"></div>
                                 <div class="inner-back-side">

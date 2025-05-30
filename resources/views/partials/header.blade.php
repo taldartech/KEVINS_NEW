@@ -26,7 +26,7 @@
                                     <a class="nav-link rx-dropdown-item" href="{{ route('rooms') }}">Rooms</a>
                                     <ul class="rx-dropdown-menu">
                                         <li><a class="dropdown-item" href="{{ route ('deluxe-room')}}">Deluxe Room</a></li>
-                                        <li><a class="dropdown-item" href="">Standard Room</a></li>
+                                        <li><a class="dropdown-item" href="{{ route ('standard-room')}}">Standard Room</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item rx-dropdown">

@@ -61,6 +61,10 @@ Route::get('/deluxe-room', function () {
     return view('deluxe-room');
 })->name('deluxe-room');
 
+Route::get('/standard-room', function (){
+    return view('standard-room');
+})->name('standard-room');
+
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);

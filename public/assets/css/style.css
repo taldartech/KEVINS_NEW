@@ -5246,7 +5246,7 @@ figure {
 =========================== */
 .ad-popup {
     position: fixed;
-    left: 32px;
+    right: 32px;
     bottom: 32px;
     z-index: 10000;
     background: #1b1b1bd1;

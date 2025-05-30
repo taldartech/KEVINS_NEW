@@ -57,7 +57,9 @@ Route::get('/historical-places', function () {
     return view('historical-places');
 })->name('historical-places');
 
-
+Route::get('/deluxe-room', function () {
+    return view('deluxe-room');
+})->name('deluxe-room');
 
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {

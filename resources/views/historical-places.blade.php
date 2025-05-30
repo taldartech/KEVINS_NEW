@@ -331,27 +331,8 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+     <!-- Footer -->
+    @include('partials.footer')
 
  <!-- Plugins -->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>

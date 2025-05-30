@@ -2402,6 +2402,7 @@ footer {
   font-weight: 300;
   line-height: 20px;
   color: #fff;
+  cursor: pointer;
 }
 .section-hero .rx-hero-contact .inner-contact .booking-now .booking-text span {
   font-size: 16px;

@@ -65,7 +65,7 @@
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                        <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>

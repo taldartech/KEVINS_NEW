@@ -144,6 +144,35 @@
                 <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
                     <div class="rx-rooms-main-box">
                         <div class="rooms-box-front">
+                            <img src="assets/img/restaurants/new-lighthouse.jpg" alt="New Lighthouse Restaurant" style="height: 250px; object-fit: cover;">
+                            <div class="content-wrap">
+                                <div class="inner-contact">
+                                    <h4>New Lighthouse Restaurant</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rooms-box-back">
+                            <img src="assets/img/restaurants/new-lighthouse.jpg" alt="New Lighthouse Restaurant">
+                            <div class="content-wrap">
+                                <div class="box-overlay"></div>
+                                <div class="inner-back-side">
+                                    <div class="sub-inner-contact">
+                                        <h5>New Lighthouse Restaurant</h5>
+                                        <ul>
+                                            <li>Cuisine: Seafood, Indian</li>
+                                            <li>Distance: 5 mins ride, 15 mins walk</li>
+                                            <li>Popular for: Fresh seafood</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="rx-rooms-main-box">
+                        <div class="rooms-box-front">
                             <img src="assets/img/restaurants/sea-food-delight.jpg" alt="Sea Food Delight" style="height: 250px; object-fit: cover;">
                             <div class="content-wrap">
                                 <div class="inner-contact">
@@ -232,6 +261,38 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-24" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="rx-rooms-main-box">
+                        <div class="rooms-box-front">
+                            <img src="assets/img/restaurants/icy-spicy.jpg" alt="Hotel Blue Sea" style="height: 250px; object-fit: cover;">
+                            <div class="content-wrap">
+                                <div class="inner-contact">
+                                    <h4>Icy Spicy (Pure Veg)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rooms-box-back">
+                            <img src="assets/img/restaurants/blue-sea.jpg" alt="Hotel Blue Sea">
+                            <div class="content-wrap">
+                                <div class="box-overlay"></div>
+                                <div class="inner-back-side">
+                                    <div class="sub-inner-contact">
+                                        <h5>Icy Spicy (Pure Veg)</h5>
+                                        <ul>
+                                            <li>Cuisine: Indian, Chinese</li>
+                                            <li>Distance: 5 mins drive, 15 mins walk</li>
+                                            <li> flavorful Indian and Chinese cuisine</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
 
                 <!-- Multi-Cuisine Restaurants -->
                 <div class="col-12 mb-4" data-aos="fade-up" data-aos-duration="1000">

@@ -45,7 +45,7 @@
     @include('partials.header')
 
       <!-- Hero -->
-      <section class="section-hero margin-b-50">
+      <section class="section-hero">
         <div class="container-fulid">
             <div class="row">
                 <div class="col-12">

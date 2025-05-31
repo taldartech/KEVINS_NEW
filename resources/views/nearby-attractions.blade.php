@@ -42,7 +42,7 @@
     
 <!-- Breadcrumb -->
     <section class="section-breadcrumb">
-        <div class="rx-breadcrumb-image" style="background: url('{{ asset('assets/img/tour/tour-banner.jpg') }}') no-repeat center; background-size: cover;">
+        <div class="rx-breadcrumb-image" style="background: url('{{ asset('assets/img/attractions/corbyns-cove.jpg') }}')  no-repeat center; background-size: cover;">
             <div class="rx-breadcrumb-overlay"></div>
             <div class="inner-breadcrumb-contact">
                 <div class="main-breadcrumb-contact">
@@ -169,7 +169,7 @@
                                         <img src="{{ asset('assets/img/attractions/samudrika-museum.jpg') }}" alt="Samudrika Marine Museum" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
-                                                <h4><i class="ri-museum-line me-2"></i>Museums & Culture</h4>
+                                                 <h4><i class="ri-museum-line me-2"></i>Museums & Culture</h4>
                                             </div>
                                         </div>
                                     </div>

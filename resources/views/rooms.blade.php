@@ -30,20 +30,19 @@
 
     <style>
         .ad-popup {
-            position: fixed;
-            left: 32px;
-            bottom: 32px;
-            z-index: 10000;
-            background: #1a1a1a;
-            border: 2px solid #c4a853;
-            border-radius: 16px;
-            max-width: 350px;
-            width: 90vw;
-            padding: 32px 24px 24px 24px;
-            box-shadow: 0 8px 32px rgba(196, 168, 83, 0.2);
-            text-align: center;
-            animation: ad-pop 0.3s ease;
-            transition: opacity 0.2s, transform 0.2s;
+           position: fixed;
+           right: 32px;
+           bottom: 32px;
+           z-index: 10000;
+           background: #1b1b1bd1;
+           border-radius: 16px;
+           max-width: 350px;
+           width: 90vw;
+           padding: 32px 24px 24px 24px;
+           box-shadow: 0 8px 32px rgba(230,190,58,0.2);
+           text-align: center;
+           animation: ad-pop 0.3s ease;
+           transition: opacity 0.2s, transform 0.2s;
         }
         @keyframes ad-pop {
             from { transform: scale(0.9); opacity: 0; }
@@ -72,7 +71,7 @@
         .ad-popup h3 {
             margin: 0 0 8px 0;
             font-size: 1.25rem;
-            color: #c4a853;
+            color: #e6be3a;
             font-family: 'Playfair Display', serif;
         }
         .ad-popup p {
@@ -82,16 +81,14 @@
             line-height: 1.5;
         }
         .ad-popup a {
-            display: inline-block;
-            background: #c4a853;
-            color: #1a1a1a;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+             display: inline-block;
+             background: #e6be3a;
+             color: #1b1b1b;
+             padding: 8px 20px;
+             border-radius: 8px;
+             text-decoration: none;
+             transition: background 0.2s;
+             font-weight: 500;
         }
         .ad-popup a:hover {
             background: #e5c876;
@@ -290,7 +287,7 @@
                                 </div>
                                 <div class="last-contact">
                                     <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" class="inner-button" target="_blank">Book Now</a>
-                                    <a href="rooms.html" class="inner-button"><i class="ri-arrow-right-up-line"></i></a>
+                                    <a href= class="inner-button"><i class="ri-arrow-right-up-line"></i></a>
                                 </div>
                             </div>
                         </div>

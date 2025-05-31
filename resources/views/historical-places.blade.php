@@ -42,7 +42,7 @@
 
     <!-- Breadcrumb -->
     <section class="section-breadcrumb">
-        <div class="rx-breadcrumb-image" style="background: url('{{ asset('assets/img/tour/tour-banner.jpg') }}') no-repeat center; background-size: cover;">
+        <div class="rx-breadcrumb-image" style="background: url('{{('assets/img/netaji-subash-chandra-bose-island.jpg') }}') no-repeat center; background-size: cover;">
             <div class="rx-breadcrumb-overlay"></div>
             <div class="inner-breadcrumb-contact">
                 <div class="main-breadcrumb-contact">

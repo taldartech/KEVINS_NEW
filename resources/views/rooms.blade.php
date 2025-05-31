@@ -226,7 +226,7 @@
                                 </div>
                                 <div class="last-contact">
                                     <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" class="inner-button" target="_blank">Book Now</a>
-                                    <a href="rooms.html" class="inner-button"><i
+                                    <a href="{{ route ('standard-room')}}" class="inner-button"><i
                                         class="ri-arrow-right-up-line"></i></a>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
                                 </div>
                                 <div class="last-contact">
                                     <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" class="inner-button" target="_blank">Book Now</a>
-                                    <a href= class="inner-button"><i class="ri-arrow-right-up-line"></i></a>
+                                    <a href= "{{ route ('deluxe-room')}}" class="inner-button"><i class="ri-arrow-right-up-line"></i></a>
                                 </div>
                             </div>
                         </div>

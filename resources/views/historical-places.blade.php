@@ -134,7 +134,7 @@
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/corbyns-cove.jpg') }}" alt="Corbyn's Cove Beach" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/netaji-subash-chandra-bose-island.jpg') }}" alt="subash chandra bose island" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
                                                 <h4>Netaji Subhas Chandra Bose Island (Ross Island)</h4>
@@ -142,7 +142,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/corbyns-cove.jpg') }}" alt="Corbyn's Cove Beach">
+                                        <img src="{{ asset('assets/img/netaji-subash-chandra-bose-island.jpg') }}" alt="subash chandra bose island">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">
@@ -166,7 +166,7 @@
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/samudrika-museum.jpg') }}" alt="Samudrika Marine Museum" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/viper-island-3.jpg') }}" alt="Viper island" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
                                                 <h4>Viper Island – Where History Speaks Softly</h4>
@@ -174,7 +174,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/samudrika-museum.jpg') }}" alt="Samudrika Marine Museum">
+                                        <img src="{{ asset('assets/img/viper-island-3.jpg') }}" alt="Viper island">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">
@@ -197,7 +197,7 @@
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/water-sports.jpg') }}" alt="Water Sports Complex" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/japanese-bunker.jpg') }}" alt="Japanese bunkers" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
                                                 <h4>Japanese Bunkers – WWII Relics</h4>
@@ -205,7 +205,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/water-sports.jpg') }}" alt="Water Sports Complex">
+                                        <img src="{{ asset('assets/img/japanese-bunker.jpg') }}" alt="Japanese bunkers">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">
@@ -228,7 +228,7 @@
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/water-sports.jpg') }}" alt="Water Sports Complex" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="Mount manipur" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
                                                 <h4>Mount Manipur (formerly Mount Harriet)</h4>
@@ -236,7 +236,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/water-sports.jpg') }}" alt="Water Sports Complex">
+                                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="Mount manipur">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">
@@ -259,7 +259,7 @@
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/samudrika-museum.jpg') }}" alt="Samudrika Marine Museum" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/chatham-saw-mill.jpg') }}" alt="Chatham saw mill" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
                                                 <h4> Chatham Saw Mill</h4>
@@ -267,7 +267,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/samudrika-museum.jpg') }}" alt="Samudrika Marine Museum">
+                                        <img src="{{ asset('assets/img/chatham-saw-mill.jpg') }}" alt="Chatham saw mill">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">
@@ -290,7 +290,7 @@
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/cellular-jail.jpg') }}" alt="Cellular Jail" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/aberdeen-clock-tower.jpg') }}" alt=" Aberdeen Bazaar & Clock Tower" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
                                                 <h4>Aberdeen Bazaar & Clock Tower</h4>
@@ -298,7 +298,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/cellular-jail.jpg') }}" alt="Cellular Jail">
+                                        <img src="{{ asset('assets/img/aberdeen-clock-tower.jpg') }}" alt="Aberdeen Bazaar & Clock Tower">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">

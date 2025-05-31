@@ -2283,7 +2283,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
 }
 .rx-slider .slide-1 {
   background-image: url("../img/hero/hero1.jpeg");

@@ -110,7 +110,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/cellular-jail.jpg') }}" alt="Cellular Jail">
+                                        <img src="{{ asset('assets/img/attractions/Cellular-Jail.jpg') }}" alt="Cellular Jail">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">

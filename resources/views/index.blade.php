@@ -909,7 +909,7 @@
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/cellular-jail.jpg') }}" alt="Cellular Jail" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/attractions/Cellular-Jail.jpg') }}" alt="Cellular Jail" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
                                                 <h4><i class="ri-history-line me-2"></i>Historical Sites</h4>
@@ -917,7 +917,7 @@
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/cellular-jail.jpg') }}" alt="Cellular Jail">
+                                        <img src="{{ asset('assets/img/attractions/Cellular-Jail.jpg') }}" alt="Cellular Jail">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">

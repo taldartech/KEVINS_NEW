@@ -402,7 +402,7 @@
                                         <ul>
                                             <li>Cuisine: Multi-cuisine, Indian, Chinese</li>
                                             <li>Distance: 2 mins drive, 5 mins walk</li>
-                                            <li>Popular for: Friendly staff and delicious food</li>
+                                            <li>Popular for: and delicious food</li>
                                         </ul>
                                     </div>
                                 </div>

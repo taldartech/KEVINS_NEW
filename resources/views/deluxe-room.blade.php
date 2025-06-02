@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kevins Bed & Breakfast - Best hotel in port blair">
     <meta name="keywords" content="hotel, booking, restaurant, spa, resort, hotel in port blair,restaurants in port blair , attracitons in port blair, best property in port blair, homestay">
-    <title>Deluxe Room | Kevins Bed & Breakfast</title>
+    <title>Deluxe Ruoom | Kevins Bed & Breakfast</title>
 
     <!-- site Favicon -->
     <link rel="icon" href="assets/img/logo/logo.png" type="image/x-icon">

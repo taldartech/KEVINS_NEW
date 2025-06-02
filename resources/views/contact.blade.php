@@ -12,7 +12,7 @@
     <title>Kevins Bed & Breakfast - Best hotel in port blair</title>
 
     <!-- site Favicon -->
-    <link rel="icon" href="assets/img/favicon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/img/logo/logo.png') }}" type="image/x-icon">
 
     <!-- Css All Plugins Files -->
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">

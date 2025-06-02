@@ -5226,10 +5226,11 @@ figure {
     color: #fff;
     text-shadow: 0 1px 8px rgba(0,0,0,0.11);
 }
-@media (max-width: 768px) {
+
+@media (max-width: 991px) {
     .book-now-fixed {
-        top: 10px;
-        right: 10px;
+        top: 540px;
+        right: -9px;
     }
     .book-now-circle {
         width: 120px;
@@ -5240,6 +5241,40 @@ figure {
         font-size: 1rem;
     }
 }
+
+@media (max-width: 767px) {
+    .book-now-fixed {
+        top: 480px;
+        right: -9px;
+    }
+    .book-now-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 1rem;
+    }
+    .book-now-number {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 575px){
+      .book-now-fixed {
+        top: 410px;
+        right: -9px;
+    }
+    .book-now-circle {
+        width: 110px;
+        height: 110px;
+        font-size: 0.9rem;
+    }
+    .book-now-number {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 
 /* ===========================
     Taldar Tech Popup

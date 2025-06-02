@@ -43,7 +43,7 @@
     @include('partials.header')
     <!-- Breadcrumb -->
     <section class="section-breadcrumb">
-        <div class="rx-breadcrumb-image" style="background: url('{{ asset('assets/img/tour/tour-banner.jpg') }}') no-repeat center; background-size: cover;">
+        <div class="rx-breadcrumb-image" style="background: url('{{('assets/img/mount-manipur.jpg') }}') no-repeat center; background-size: cover;">
             <div class="rx-breadcrumb-overlay"></div>
             <div class="inner-breadcrumb-contact">
                 <div class="main-breadcrumb-contact">
@@ -129,7 +129,7 @@
                                 <li>Anthropological Museum</li>
                                 <li>Local shopping stops</li>
                             </ul>
-                            <div class="tour-price mb-3git ">From ₹2,000 per person</div>
+                            <div class="tour-price mb-3 ">From ₹2,000 per person</div>
                             <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20Port%20Blair%20City%20Tour" class="tour-inquiry-btn mt-3">Inquire Now</a>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                                 <li>Jarawa reserve drive</li>
                                 <li>Breakfast & lunch included</li>
                             </ul>
-                            <div class="tour-price mb-3git ">From ₹4,500 per person</div>
+                            <div class="tour-price mb-3 ">From ₹4,500 per person</div>
                             <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20Baratang%20Island" class="tour-inquiry-btn mt-3">Inquire Now</a>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                                 <li>Accommodation included</li>
                                 <li>Breakfast & select meals</li>
                             </ul>
-                            <div class="tour-price mb-3git ">From ₹16,000 per person</div>
+                            <div class="tour-price mb-3 ">From ₹16,000 per person</div>
                             <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%203%20Island%20Special" class="tour-inquiry-btn mt-3">Inquire Now</a>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                                 <li>Expert local guides</li>
                                 <li>Flexible duration & budget</li>
                             </ul>
-                            <div class="tour-price mb-3git ">On Request</div>
+                            <div class="tour-price mb-3 ">On Request</div>
                             <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20Custom%20Andaman%20Tour" class="tour-inquiry-btn mt-3">Inquire Now</a>
                         </div>
                     </div>

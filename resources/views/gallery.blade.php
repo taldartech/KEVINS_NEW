@@ -34,14 +34,6 @@
 <body>
     @include('partials.book-now')
     @include('partials.taldar-popup')
-    <!-- Book Now Floating Button -->
-    <div class="book-now-fixed">
-        <!-- <span class="book-now-label">CALL US</span> -->
-        <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank" class="book-now-circle" title="Book Now">
-            <div>BOOK NOW</div>
-            <!-- <div class="book-now-number">993 328 3649</div> -->
-        </a>
-    </div>
 
     <!-- Loader -->
     <div class="rx-loader">

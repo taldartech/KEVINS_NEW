@@ -28,101 +28,7 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <style>
-        .ad-popup {
-           position: fixed;
-           right: 32px;
-           bottom: 32px;
-           z-index: 10000;
-           background: #1b1b1bd1;
-           border-radius: 16px;
-           max-width: 350px;
-           width: 90vw;
-           padding: 32px 24px 24px 24px;
-           box-shadow: 0 8px 32px rgba(230,190,58,0.2);
-           text-align: center;
-           animation: ad-pop 0.3s ease;
-           transition: opacity 0.2s, transform 0.2s;
-        }
-        @keyframes ad-pop {
-            from { transform: scale(0.9); opacity: 0; }
-            to   { transform: scale(1); opacity: 1; }
-        }
-        .ad-popup-close {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            background: transparent;
-            border: none;
-            font-size: 1.5rem;
-            color: #c4a853;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-        .ad-popup-close:hover {
-            color: #e5c876;
-        }
-        .ad-popup img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 16px;
-            border: 1px solid #c4a853;
-        }
-        .ad-popup h3 {
-            margin: 0 0 8px 0;
-            font-size: 1.25rem;
-            color: #e6be3a;
-            font-family: 'Playfair Display', serif;
-        }
-        .ad-popup p {
-            margin-bottom: 16px;
-            color: #ffffff;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-        .ad-popup a {
-             display: inline-block;
-             background: #e6be3a;
-             color: #1b1b1b;
-             padding: 8px 20px;
-             border-radius: 8px;
-             text-decoration: none;
-             transition: background 0.2s;
-             font-weight: 500;
-        }
-        .ad-popup a:hover {
-            background: #e5c876;
-            transform: translateY(-2px);
-        }
-        @media (max-width: 600px) {
-            .ad-popup {
-                left: 8px;
-                bottom: 8px;
-            color: #fff;
-            font-size: 0.95rem;
-        }
-        .ad-popup a {
-            display: inline-block;
-            background: #e6be3a;
-            color: #1b1b1b;
-            padding: 8px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background 0.2s;
-            font-weight: 500;
-        }
-        .ad-popup a:hover {
-            background: #d1a800;
-        }
-        @media (max-width: 600px) {
-            .ad-popup {
-                left: 8px;
-                bottom: 8px;
-                padding: 18px 6px 12px 6px;
-                max-width: 95vw;
-            }
-        }
-    </style>
+    
 
 </head>
 
@@ -130,12 +36,7 @@
     @include('partials.book-now')
     @include('partials.taldar-popup')
     
-    <!-- Book Now Floating Button -->
-    <div class="book-now-fixed">
-        <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank" class="book-now-circle" title="Book Now">
-            <div>BOOK NOW</div>
-        </a>
-    </div>
+   
 
     <!-- Loader -->
     <div class="rx-loader">
@@ -330,6 +231,16 @@
 
     <!-- Footer -->
     @include('partials.footer')
+
+    <!-- Back to top  -->
+    <a href="#Top" class="back-to-top result-placeholder">
+        <i class="ri-arrow-up-double-fill"></i>
+        <div class="back-to-top-wrap active-progress">
+            <svg viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+            </svg>
+        </div>
+    </a>
 
 
     <!-- Feature tools -->

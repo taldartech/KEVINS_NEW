@@ -20,61 +20,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <!-- Ad-popup CSS moved to style.css -->
     <style>
-        .book-now-fixed {
-            position: fixed;
-            top: -40px;
-            right: -24px;
-            z-index: 2000;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        .book-now-circle {
-            background: #e6be3a;
-            color: #fff;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.13);
-            font-size: 1.3rem;
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 400;
-            text-align: center;
-            transition: box-shadow 0.2s;
-            cursor: pointer;
-        }
-        .book-now-circle:hover {
-            box-shadow: 0 12px 48px rgba(230,190,58,0.25);
-            background: #d1a800;
-            color: #fff;
-            text-decoration: none;
-        }
-        .book-now-number {
-            margin-top: 10px;
-            font-size: 1.25rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-            color: #fff;
-            text-shadow: 0 1px 8px rgba(0,0,0,0.11);
-        }
-        @media (max-width: 768px) {
-            .book-now-fixed {
-                top: 10px;
-                right: 10px;
-            }
-            .book-now-circle {
-                width: 120px;
-                height: 120px;
-                font-size: 1rem;
-            }
-            .book-now-number {
-                font-size: 1rem;
-            }
-        }
+        
         .tour-package-card { border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); background: #fff; margin-bottom: 32px; transition: box-shadow 0.2s; }
         .tour-package-card:hover { box-shadow: 0 8px 32px rgba(230,190,58,0.12); }
         .tour-title { font-size: 1.4rem; font-weight: 600; color: #b48b13; }
@@ -90,11 +36,7 @@
     @include('partials.book-now')
     @include('partials.taldar-popup')
     <!-- Book Now Floating Button -->
-    <div class="book-now-fixed">
-        <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank" class="book-now-circle" title="Book Now">
-            <div>BOOK NOW</div>
-        </a>
-    </div>
+    
     
 
     <!-- Header (reuse from other pages) -->
@@ -450,6 +392,43 @@
     </section>
     <!-- Footer -->
     @include('partials.footer')
+
+    <!-- Back to top  -->
+    <a href="#Top" class="back-to-top result-placeholder">
+        <i class="ri-arrow-up-double-fill"></i>
+        <div class="back-to-top-wrap active-progress">
+            <svg viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+            </svg>
+        </div>
+    </a>
+
+
+
+     <!-- Plugins -->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/vendor/smoothscroll.min.js"></script>
+    <script src="assets/js/vendor/jquery.fancybox.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/owl.carousel.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+
+    <!-- main-js -->
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.ad-popup-close').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var popup = btn.closest('.ad-popup');
+                    if (popup) popup.style.display = 'none';
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>

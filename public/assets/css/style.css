@@ -5260,7 +5260,7 @@ figure {
 
 @media (max-width: 575px){
       .book-now-fixed {
-        top: 410px;
+        top: 330px;
         right: -9px;
     }
     .book-now-circle {
@@ -5272,6 +5272,8 @@ figure {
         font-size: 0.9rem;
     }
 }
+
+
 
 
 

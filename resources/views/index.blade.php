@@ -132,7 +132,7 @@
 
                         <!-- Slide 4 - Room Hall -->
                         <div class="rx-slide slide-4">
-                            <img src="{{ asset('assets/img/hero/hero4.jpeg') }}" alt="Historic Cellular Jail, Port Blair, Andaman" class="banner-arrow-img">
+                            <img src="{{ asset('assets/img/hero/hero4.jpeg') }}" alt="Historic Cellular Jail, Sri Vijaya Puram (Port Blair), Andaman" class="banner-arrow-img">
                             <div class="rx-hero-contact">
                                 <div class="container">
                                     <div class="row">

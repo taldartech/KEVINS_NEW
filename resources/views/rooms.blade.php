@@ -100,7 +100,7 @@
                 
                 <div class="col-12 mb-24" data-aos="fade-up" data-aos-duration="1000">
                     <div class="rx-about-contact">
-                        <p>Enhance your experience of Port Blair's picturesque coastline and rich history by staying at Kevins. Our bed and breakfast features six elegantly furnished rooms in Deluxe and Standard categories. Each room has modern amenities, including air conditioning, a television, and 24-hour hot and cold-water service. Designed for ultimate comfort, our rooms make you feel right at home. Enjoy a complimentary welcome drink and exemplary room service, ensuring that your stay is both relaxing and memorable. At Kevins, the timeless charm of Port Blair's past blends seamlessly with modern hospitality, catering to both business travelers and those seeking leisure.</p>
+                        <p>Enhance your experience of Sri Vijaya Puram(Port Blair)'s picturesque coastline and rich history by staying at Kevins. Our bed and breakfast features six elegantly furnished rooms in Deluxe and Standard categories. Each room has modern amenities, including air conditioning, a television, and 24-hour hot and cold-water service. Designed for ultimate comfort, our rooms make you feel right at home. Enjoy a complimentary welcome drink and exemplary room service, ensuring that your stay is both relaxing and memorable. At Kevins, the timeless charm of Sri Vijaya Puram(Port Blair) past blends seamlessly with modern hospitality, catering to both business travelers and those seeking leisure.</p>
                     </div>
                 </div>
                 

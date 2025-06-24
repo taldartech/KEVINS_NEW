@@ -96,7 +96,7 @@
                 
                 <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
                     <div class="rx-amenities-contact">
-                        <p class="text-center mb-5">Discover the rich history and natural beauty of Port Blair with these must-visit attractions near KEVINS Bed & Breakfast:</p>
+                        <p class="text-center mb-5">Discover the rich history and natural beauty of Sri Vijaya Puram(Port Blair) with these must-visit attractions near KEVINS Bed & Breakfast:</p>
                         
                         <div class="row mb-minus-24">
 
@@ -221,7 +221,7 @@
                                                 <div class="sub-inner-contact">
                                                     <h5>Japanese Bunkers</h5>
                                                     <ul>
-                                                          <li>Located around Port Blair near Ross Island and Corbyn’s Cove</li>
+                                                          <li>Located around Sri Vijaya Puram(Port Blair) near Ross Island and Corbyn’s Cove</li>
                                                           <li>Well-preserved bunkers from the Japanese occupation</li>
                                                           <li>Constructed during World War II</li>
                                                           <li>Offer a unique glimpse into wartime history</li>
@@ -315,7 +315,7 @@
                                                     <h5>Aberdeen Bazaar & Clock Tower</h5>
                                                   <ul>
                                                       <li>Built in 1943 to honor WWI soldiers</li>
-                                                      <li>Located in Port Blair’s bustling Aberdeen Bazaar</li>
+                                                      <li>Located in Sri Vijaya Puram(Port Blair)’s bustling Aberdeen Bazaar</li>
                                                       <li>A landmark symbolizing resilience and colonial history</li>
                                                       <li>Close to Cellular Jail, Marina Park, and Japanese Bunkers</li>
                                                     </ul>

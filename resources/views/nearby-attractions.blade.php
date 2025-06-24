@@ -99,30 +99,257 @@
                         <p class="text-center mb-5">Discover the rich history and natural beauty of Port Blair with these must-visit attractions near KEVINS Bed & Breakfast:</p>
                         
                         <div class="row mb-minus-24">
-                            <!-- Historical Sites -->
+
+
+
+
+
+
+
+                        <div class="row mb-minus-24">
+                            <!-- Cellular Jail -->
                             <div class="col-lg-6 col-md-6 mb-24">
                                 <div class="rx-rooms-main-box">
                                     <div class="rooms-box-front">
-                                        <img src="{{ asset('assets/img/attractions/cellular-jail.jpg') }}" alt="Cellular Jail" style="height: 300px; object-fit: cover;">
+                                        <img src="{{ asset('assets/img/attractions/Cellular-Jail.jpg') }}" alt="Cellular Jail" style="height: 300px; object-fit: cover;">
                                         <div class="content-wrap">
                                             <div class="inner-contact">
-                                                <h4><i class="ri-history-line me-2"></i>Historical Sites</h4>
+                                                <h4>Cellular Jail – Echoes of Freedom</h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="rooms-box-back">
-                                        <img src="{{ asset('assets/img/attractions/cellular-jail.jpg') }}" alt="Cellular Jail">
+                                        <img src="{{ asset('assets/img/attractions/Cellular-Jail.jpg') }}" alt="Cellular Jail">
                                         <div class="content-wrap">
                                             <div class="box-overlay"></div>
                                             <div class="inner-back-side">
                                                 <div class="sub-inner-contact">
-                                                    <h5>Historical Sites</h5>
+                                                    <h5>Cellular Jail</h5>
+                                                  <ul>
+                                                     <li>Cellular Jail (15 mins) - Symbol of India’s independence struggle</li>
+                                                     <li>Built by the British in early 1900s - Used for solitary confinement</li>
+                                                     <li>Now a National Memorial with museum exhibits</li>
+                                                     <li>Don't miss the evening Sound and Light Show</li>
+                                                 </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Netaji subhash chandra bose island -->
+                            <div class="col-lg-6 col-md-6 mb-24">
+                                <div class="rx-rooms-main-box">
+                                    <div class="rooms-box-front">
+                                        <img src="{{ asset('assets/img/netaji-subash-chandra-bose-island.jpg') }}" alt="subash chandra bose island" style="height: 300px; object-fit: cover;">
+                                        <div class="content-wrap">
+                                            <div class="inner-contact">
+                                                <h4>Netaji Subhas Chandra Bose Island (Ross Island)</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rooms-box-back">
+                                        <img src="{{ asset('assets/img/netaji-subash-chandra-bose-island.jpg') }}" alt="subash chandra bose island">
+                                        <div class="content-wrap">
+                                            <div class="box-overlay"></div>
+                                            <div class="inner-back-side">
+                                                <div class="sub-inner-contact">
+                                                    <h5>Netaji Subhas Chandra Bose Island</h5>
                                                     <ul>
-                                                        <li>Cellular Jail (5 mins) - Historic colonial prison</li>
-                                                        <li>Ross Island (Ferry ride) - British-era ruins</li>
-                                                        <li>Viper Island (10 mins) – Where History Speaks Softly</li>
-                                                        <li>Japanese Bunkers (15 mins) – WWII Relics</li>
-                                                        <li> Mount Manipur (1.5 hrs) (formerly Mount Harriet)</li>
+                                                       <li>Former British administrative capital</li>
+                                                          <li>Occupied by Japanese forces during World War II</li>
+                                                          <li>Visited by Netaji Subhas Chandra Bose in 1943</li>
+                                                          <li>Reachable via a 10-minute boat ride from Marina Jetty</li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Viper Island -->
+                            <div class="col-lg-6 col-md-6 mb-24">
+                                <div class="rx-rooms-main-box">
+                                    <div class="rooms-box-front">
+                                        <img src="{{ asset('assets/img/viper-island-3.jpg') }}" alt="Viper island" style="height: 300px; object-fit: cover;">
+                                        <div class="content-wrap">
+                                            <div class="inner-contact">
+                                                <h4>Viper Island – Where History Speaks Softly</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rooms-box-back">
+                                        <img src="{{ asset('assets/img/viper-island-3.jpg') }}" alt="Viper island">
+                                        <div class="content-wrap">
+                                            <div class="box-overlay"></div>
+                                            <div class="inner-back-side">
+                                                <div class="sub-inner-contact">
+                                                    <h5>Viper Island</h5>
+                                                    <ul>
+                                                       <li>A peaceful island with a haunting colonial past</li>
+                                                       <li>British prison island before the Cellular Jail era</li>
+                                                       <li>Ruins of gallows and jail walls remain on the island</li>
+                                                       <li>Stands as a silent witness to India’s freedom struggle</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Japanese bunkers -->
+                            <div class="col-lg-6 col-md-6 mb-24">
+                                <div class="rx-rooms-main-box">
+                                    <div class="rooms-box-front">
+                                        <img src="{{ asset('assets/img/japanese-bunker.jpg') }}" alt="Japanese bunkers" style="height: 300px; object-fit: cover;">
+                                        <div class="content-wrap">
+                                            <div class="inner-contact">
+                                                <h4>Japanese Bunkers – WWII Relics</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rooms-box-back">
+                                        <img src="{{ asset('assets/img/japanese-bunker.jpg') }}" alt="Japanese bunkers">
+                                        <div class="content-wrap">
+                                            <div class="box-overlay"></div>
+                                            <div class="inner-back-side">
+                                                <div class="sub-inner-contact">
+                                                    <h5>Japanese Bunkers</h5>
+                                                    <ul>
+                                                          <li>Located around Port Blair near Ross Island and Corbyn’s Cove</li>
+                                                          <li>Well-preserved bunkers from the Japanese occupation</li>
+                                                          <li>Constructed during World War II</li>
+                                                          <li>Offer a unique glimpse into wartime history</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                             <!-- Mount Manipur -->
+                            <div class="col-lg-6 col-md-6 mb-24">
+                                <div class="rx-rooms-main-box">
+                                    <div class="rooms-box-front">
+                                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="Mount manipur" style="height: 300px; object-fit: cover;">
+                                        <div class="content-wrap">
+                                            <div class="inner-contact">
+                                                <h4>Mount Manipur (formerly Mount Harriet)</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rooms-box-back">
+                                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="Mount manipur">
+                                        <div class="content-wrap">
+                                            <div class="box-overlay"></div>
+                                            <div class="inner-back-side">
+                                                <div class="sub-inner-contact">
+                                                    <h5>Mount Manipur</h5>
+                                                    <ul>
+                                                            <li>Third-highest peak in the Andaman & Nicobar Islands</li>
+                                                            <li>Former British summer retreat, renamed to honor Manipuri freedom fighters</li>
+                                                            <li>Site of exile after the 1891 Anglo-Manipuri War</li>
+                                                            <li>Known for lush forests, panoramic views, and ₹20 note scenery</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chatham Saw mill -->
+                            <div class="col-lg-6 col-md-6 mb-24">
+                                <div class="rx-rooms-main-box">
+                                    <div class="rooms-box-front">
+                                        <img src="{{ asset('assets/img/chatham-saw-mill.jpg') }}" alt="Chatham saw mill" style="height: 300px; object-fit: cover;">
+                                        <div class="content-wrap">
+                                            <div class="inner-contact">
+                                                <h4> Chatham Saw Mill</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rooms-box-back">
+                                        <img src="{{ asset('assets/img/chatham-saw-mill.jpg') }}" alt="Chatham saw mill">
+                                        <div class="content-wrap">
+                                            <div class="box-overlay"></div>
+                                            <div class="inner-back-side">
+                                                <div class="sub-inner-contact">
+                                                    <h5>Chatham Saw Mill</h5>
+                                                    <ul>
+                                                         <li>Asia’s oldest functioning sawmill, established in 1883</li>
+                                                         <li>A living piece of colonial-era industrial history</li>
+                                                         <li>Features a fascinating museum with historic exhibits</li>
+                                                         <li>Showcases traditional craftsmanship that fueled colonial trade</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aberdeen Bazaar & Clock Tower -->
+                            <div class="col-lg-6 col-md-6 mb-24">
+                                <div class="rx-rooms-main-box">
+                                    <div class="rooms-box-front">
+                                        <img src="{{ asset('assets/img/aberdeen-clock-tower.jpg') }}" alt=" Aberdeen Bazaar & Clock Tower" style="height: 300px; object-fit: cover;">
+                                        <div class="content-wrap">
+                                            <div class="inner-contact">
+                                                <h4>Aberdeen Bazaar & Clock Tower</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rooms-box-back">
+                                        <img src="{{ asset('assets/img/aberdeen-clock-tower.jpg') }}" alt="Aberdeen Bazaar & Clock Tower">
+                                        <div class="content-wrap">
+                                            <div class="box-overlay"></div>
+                                            <div class="inner-back-side">
+                                                <div class="sub-inner-contact">
+                                                    <h5>Aberdeen Bazaar & Clock Tower</h5>
+                                                  <ul>
+                                                      <li>Built in 1943 to honor WWI soldiers</li>
+                                                      <li>Located in Port Blair’s bustling Aberdeen Bazaar</li>
+                                                      <li>A landmark symbolizing resilience and colonial history</li>
+                                                      <li>Close to Cellular Jail, Marina Park, and Japanese Bunkers</li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- North Bay Island - Coral reefs & snorkeling -->
+                            <div class="col-lg-6 col-md-6 mb-24">
+                                <div class="rx-rooms-main-box">
+                                    <div class="rooms-box-front">
+                                        <img src="{{ asset('assets/img/north-bay-island.jpg') }}" alt="North Bay Island" style="height: 300px; object-fit: cover;">
+                                        <div class="content-wrap">
+                                            <div class="inner-contact">
+                                                <h4>North Bay Island - Coral reefs & snorkeling</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rooms-box-back">
+                                        <img src="{{ asset('assets/img/north-bay-island.jpg') }}" alt="North Bay Island">
+                                        <div class="content-wrap">
+                                            <div class="box-overlay"></div>
+                                            <div class="inner-back-side">
+                                                <div class="sub-inner-contact">
+                                                    <h5>North Bay Island - Coral reefs & snorkeling</h5>
+                                                    <ul>
+                                                        <li>Dive into excitement with a variety of water sports like jet skiing, parasailing, and banana boat rides</li>
+                                                        <li>Experience the adrenaline rush as you speed across waves or soar above the sea</li>
+                                                        <li>Perfect for adventure seekers looking to add thrill to their island getaway</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -151,7 +378,6 @@
                                                     <h5>Beaches & Nature</h5>
                                                     <ul>
                                                         <li>Corbyn's Cove Beach (10 mins) - Water sports</li>
-                                                        <li>North Bay Island - Coral reefs & snorkeling</li>
                                                         <li>Marina Park (5 mins) - Scenic waterfront</li>
                                                         <li>Sippighat Farm (15 mins) - Spice gardens</li>
                                                     </ul>

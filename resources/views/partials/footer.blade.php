@@ -78,6 +78,7 @@
                                     <li><a class="nav-link" href="#why-choose-kevins">About Us</a></li>
                                     <li><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                                     <li><a class="nav-link" href="{{ url('terms') }}">Terms &amp; Conditions</a></li>
+<li><a class="nav-link" href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
 <li><a class="nav-link" href="{{ url('refund-policy') }}">Refund &amp; Cancellation Policy</a></li>
 <li><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
                                     <li>

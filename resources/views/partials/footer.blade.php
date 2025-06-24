@@ -77,6 +77,9 @@
                                 <ul>
                                     <li><a class="nav-link" href="#why-choose-kevins">About Us</a></li>
                                     <li><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+                                    <li><a class="nav-link" href="{{ url('terms') }}">Terms &amp; Conditions</a></li>
+<li><a class="nav-link" href="{{ url('refund-policy') }}">Refund &amp; Cancellation Policy</a></li>
+<li><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
                                     <li>
                                         <a href="https://www.google.com/maps/dir//99%2F5,+J.N.Road,+Near+Airtel+Office,+744102,+Delanipur,+Sri+Vijaya+Puram,+Andaman+and+Nicobar+Islands+744102/@11.6710499,92.6441325,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x308895a65ad4e3f7:0x729b7978491608a6!2m2!1d92.7265344!2d11.6710616?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">Directions</a>
                                     </li>

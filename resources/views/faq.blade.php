@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from maraviyainfotech.com/projects/royalx-html/royalx-html/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Jan 2025 05:47:16 GMT -->
+<!-- Mirrored from maraviyainfotech.com/projects/royalx-html/royalx-html/rooms.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Jan 2025 05:47:10 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kevins Bed & Breakfast - Best hotel in port blair">
     <meta name="keywords" content="hotel, booking, restaurant, spa, resort, hotel in port blair,restaurants in port blair , attracitons in port blair, best property in port blair, homestay">
-    <title>Kevins Bed & Breakfast - Best hotel in port blair/title>
+    <title>Terms & Conditions | Kevins Bed & Breakfast</title>
 
     <!-- site Favicon -->
-    <link rel="icon" href="assets/img/favicon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo/logo.png" type="image/x-icon">
 
     <!-- Css All Plugins Files -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
@@ -28,9 +28,15 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    
+
 </head>
 
 <body>
+    @include('partials.book-now')
+    @include('partials.taldar-popup')
+    
+   
 
     <!-- Loader -->
     <div class="rx-loader">
@@ -38,167 +44,11 @@
     </div>
 
     <!-- Header -->
-    <header>
-        <div class="rx-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="rx-inner-menu-desk">
-                            <a href="index.html" class="rx-header-btn">
-                                <img src="assets/img/logo/logo.png" alt="logo">
-                            </a>
-                            <button class="navbar-toggler shadow-none rx-toggle-menu" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <i class="ri-menu-2-line"></i>
-                            </button>
-                            <div class="rx-main-menu" id="navbarSupportedContent">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item rx-dropdown">
-                                        <a class="nav-link rx-dropdown-item" href="javascript:void(0)">Home</a>
-                                        <ul class="rx-dropdown-menu">
-                                            <li><a class="dropdown-item" href="index.html">Hotel</a></li>
-                                            <li><a class="dropdown-item" href="demo-2.html">Restaurant</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item rx-dropdown">
-                                        <a class="nav-link rx-dropdown-item" href="javascript:void(0)">Category</a>
-                                        <ul class="rx-dropdown-menu">
-                                            <li><a class="dropdown-item" href="gallery.html">Gallery 1</a></li>
-                                            <li><a class="dropdown-item" href="gallery-2.html">Gallery 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item rx-dropdown">
-                                        <a class="nav-link rx-dropdown-item" href="javascript:void(0)">Room</a>
-                                        <ul class="rx-dropdown-menu">
-                                            <li><a class="dropdown-item" href="rooms.html">Rooms 1</a></li>
-                                            <li><a class="dropdown-item" href="rooms-2.html">Rooms 2</a></li>
-                                            <li><a class="dropdown-item" href="rooms-3.html">Rooms 3</a></li>
-                                            <li><a class="dropdown-item" href="room-details.html">Rooms details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item rx-dropdown">
-                                        <a class="nav-link rx-dropdown-item" href="javascript:void(0)">Pages</a>
-                                        <ul class="rx-dropdown-menu">
-                                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                            <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                            <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
-                                            <li><a class="dropdown-item" href="team.html">Team</a></li>
-                                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                                            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
-                                            <li><a class="dropdown-item" href="spa.html">Spa</a></li>
-                                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                                            <li><a class="dropdown-item" href="signin.html">Login</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item rx-dropdown">
-                                        <a class="nav-link rx-dropdown-item" href="javascript:void(0)">Blog</a>
-                                        <ul class="rx-dropdown-menu">
-                                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="restaurant.html">Restaurant</a>
-                                    </li>
-                                </ul>
-                                <div class="header-button">
-                                    <a href="javascript:void(0)" class="rx-btn-one" data-bs-toggle="modal" data-bs-target="#rx_booking_from">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="rx-mobile-menu-overlay"></div>
-        <div id="rx-mobile-menu" class="rx-mobile-menu">
-            <div class="rx-menu-title">
-                <span class="menu_title">My Menu</span>
-                <button type="button" class="rx-close-menu">×</button>
-            </div>
-            <div class="rx-menu-inner">
-                <div class="rx-menu-contact">
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0)">Home</a>
-                            <ul class="sub-menu">
-                                <li><a href="index.html">Hotel</a></li>
-                                <li><a href="demo-2.html">Restaurant</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Category</a>
-                            <ul class="sub-menu">
-                                <li><a href="gallery.html">Gallery 1</a></li>
-                                <li><a href="gallery-2.html">Gallery 2</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Room</a>
-                            <ul class="sub-menu">
-                                <li><a href="rooms.html">Rooms 1</a></li>
-                                <li><a href="rooms-2.html">Rooms 2</a></li>
-                                <li><a href="rooms-3.html">Rooms 3</a></li>
-                                <li><a href="room-details.html">Rooms details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="facilities.html">Facilities</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="spa.html">Spa</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="signin.html">Login</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Blog</a>
-                            <ul class="sub-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="restaurant.html">Restaurant</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header-res-lan-curr">
-                    <!-- Social Start -->
-                    <div class="header-res-social">
-                        <div class="header-top-social">
-                            <ul class="mb-0">
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-facebook-fill"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-twitter-fill"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-instagram-line"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-linkedin-fill"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Social End -->
-                </div>
-            </div>
-        </div>
-    </header>
-
+    @include('partials.header')
+    
     <!-- Breadcrumb -->
-    <section class="section-breadcrumb padding-b-50">
-        <div class="rx-breadcrumb-image">
+    <section class="section-breadcrumb">
+        <div class="rx-breadcrumb-image" style="background: url('assets/img/room-banner.jpg') no-repeat center; background-size: cover;">
             <div class="rx-breadcrumb-overlay"></div>
             <div class="inner-breadcrumb-contact">
                 <div class="main-breadcrumb-contact">
@@ -206,7 +56,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="rx-banner-contact">
-                                    <h2>Faq</h2>
+                                    <h2>Frequently Asked Questions</h2>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +68,7 @@
                             <div class="col-12">
                                 <div class="breadcrumb-contact">
                                     <div class="main-heading">
-                                        <h4>Faq</h4>
+                                        <h4>FAQ</h4>
                                     </div>
                                     <div class="last-contact">
                                         <ul>
@@ -247,219 +97,478 @@
                         <h4>Frequently Asked <span>Questions</span></h4>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="rx-faq">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        What Facilities Does Your Hotel Have?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        How Do I Book A Room For My Vacation?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                        How We are best among others?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Is There Any Fitness Center In Your Hotel?
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        What Type Of Room Service Do You Offer?
-                                    </button>
-                                </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingsix">
-                                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                        What Type Of Room Service Do You Offer?
-                                    </button>
-                                </h2>
-                                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="rx-faq">
                         <div class="accordion" id="accordionExampletwo">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading1">
-                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseOne">
-                                        What Facilities Does Your Hotel Have?
-                                    </button>
-                                </h2>
-                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExampletwo">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading2">
-                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
-                                        How Do I Book A Room For My Vacation?
-                                    </button>
-                                </h2>
-                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExampletwo">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading3">
-                                    <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseThree">
-                                        How We are best among others?
-                                    </button>
-                                </h2>
-                                <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#accordionExampletwo">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseFour">
-                                        Is There Any Fitness Center In Your Hotel?
-                                    </button>
-                                </h2>
-                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExampletwo">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading5">
-                                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseFive">
-                                        What Type Of Room Service Do You Offer?
-                                    </button>
-                                </h2>
-                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExampletwo">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading6">
-                                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapsesix">
-                                        What Type Of Room Service Do You Offer?
-                                    </button>
-                                </h2>
-                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExampletwo">
-                                    <div class="accordion-body">
-                                        <p>
-                                            This is the dolor sit amet, consectetur adipisicing elit.
-                                            Ad voluptate doloribus eos sunt labore ea enim voluptatem,
-                                            sequi voluptas rem doloremque architecto. Libero, vero
-                                            natus.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+  <!-- 1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading1">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+        1. What types of rooms are available?
+      </button>
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>We offer Standard (Queen bed) and Deluxe (King bed) rooms, both with ensuite bathrooms, A/C, free WiFi, and international TV channels.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading2">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        2. What are the checkin and checkout times?
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Checkin from 10:00 AM and checkout by 8:00 AM.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 3 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading3">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        3. Can I request early checkin or late checkout?
+      </button>
+    </h2>
+    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, subject to availability and an additional charge. Please inform us in advance.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 4 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading4">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        4. Is advance payment required?
+      </button>
+    </h2>
+    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, 100% advance payment is required to confirm your booking.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 5 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading5">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+        5. What is included in breakfast?
+      </button>
+    </h2>
+    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>We serve a complimentary vegetarian breakfast daily, and packed breakfast is available for early departures.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 6 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading6">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        6. How much is breakfast if not included in my rate?
+      </button>
+    </h2>
+    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>₹200 per adult or child for breakfast when not included.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 7 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading7">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+        7. Is there airport shuttle service?
+      </button>
+    </h2>
+    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, paid shuttle service is available; please request at time of booking.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 8 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading8">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        8. Is parking available?
+      </button>
+    </h2>
+    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, free on-site parking and free public parking for two cars.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 9 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading9">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+        9. Do you have power backup?
+      </button>
+    </h2>
+    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, power backup is available.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 10 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading10">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+        10. Do you allow children? Extra bed?
+      </button>
+    </h2>
+    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>All ages are welcome. An extra bed is ₹500 per person per night. No cribs available.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 11 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading11">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+        11. Is smoking allowed on premises?
+      </button>
+    </h2>
+    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>No, KEVINS is strictly a non-smoking property.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 12 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading12">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+        12. Are pets allowed?
+      </button>
+    </h2>
+    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>No pets are permitted on the property.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 13 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading13">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+        13. How close are you to the airport and city centre?
+      </button>
+    </h2>
+    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>We are ~1.5 km from Veer Savarkar International Airport and ~1 km from the harbour and city centre.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 14 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading14">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+        14. What nearby attractions can I visit?
+      </button>
+    </h2>
+    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Close to Cellular Jail, Corbyn’s Cove, Samudrika Marine Museum, museums, and beaches, all within 5 km.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 15 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading15">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+        15. Is free WiFi available?
+      </button>
+    </h2>
+    <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, complimentary high-speed WiFi in all rooms and shared areas.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 16 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading16">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+        16. Do you offer 24hour reception?
+      </button>
+    </h2>
+    <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, we have a 24hour frontdesk staff available.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 17 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading17">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+        17. Do you provide housekeeping and laundry services?
+      </button>
+    </h2>
+    <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, daily housekeeping and on-request paid laundry services are available.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 18 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading18">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+        18. Are there security measures in place?
+      </button>
+    </h2>
+    <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, we have security staff, CCTV surveillance, smoke detectors, and fire extinguishers.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 19 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading19">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+        19. Can you arrange tours and tickets?
+      </button>
+    </h2>
+    <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, our tour desk assists with sightseeing itineraries and ticket bookings.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 20 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading20">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+        20. Do you provide airport transfer?
+      </button>
+    </h2>
+    <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, paid airport transfer is available upon request.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 21 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading21">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+        21. What payment methods do you accept?
+      </button>
+    </h2>
+    <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>We accept bank transfers (advance), UPI, and cash.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 22 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading22">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+        22. Is there a common lounge or seating area?
+      </button>
+    </h2>
+    <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, we feature a shared lounge and dining area.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 23 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading23">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+        23. Do you have water and tea/coffee in the room?
+      </button>
+    </h2>
+    <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, tea/coffee maker, water, and complimentary tea/coffee are available in rooms.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 24 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading24">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+        24. Can you store luggage before checkin or after checkout?
+      </button>
+    </h2>
+    <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, we provide luggage storage service for guests free of cost.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 25 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading25">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+        25. What room amenities are provided?
+      </button>
+    </h2>
+    <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>A/C, flat-screen TV, free toiletries, hot water, wardrobe, and safety features.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 26 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading26">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+        26. What is your cancellation policy?
+      </button>
+    </h2>
+    <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Free cancellation up to 14 days before check-in; within 14 days - one night’s charge; no-show - full booking charge.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 27 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading27">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+        27. Can I modify my booking dates?
+      </button>
+    </h2>
+    <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>One-time modification allowed at least 3 days before check-in, subject to availability and rate change.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 28 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading28">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+        28. How are refunds processed?
+      </button>
+    </h2>
+    <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Refunds are processed within 2–3 working days via UPI or bank transfer.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 29 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading29">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+        29. Do you provide assistance for ferry or boat ticket bookings?
+      </button>
+    </h2>
+    <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="heading29" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, we can help arrange ferry and inter-island boat tickets upon request. It is recommended to notify us well in advance during peak season.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 30 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading30">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+        30. Is the property suitable for elderly guests?
+      </button>
+    </h2>
+    <div id="collapse30" class="accordion-collapse collapse" aria-labelledby="heading30" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, our rooms are on ground or easily accessible levels; however, please let us know in advance if you need any special assistance.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 31 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading31">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+        31. How far is KEVINS from Cellular Jail?
+      </button>
+    </h2>
+    <div id="collapse31" class="accordion-collapse collapse" aria-labelledby="heading31" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>We are approximately 2 km from the Cellular Jail, about 5 minute drive.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 32 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading32">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+        32. Are credit cards accepted on-site?
+      </button>
+    </h2>
+    <div id="collapse32" class="accordion-collapse collapse" aria-labelledby="heading32" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Currently, we accept UPI and cash payments on-site. Credit card facility is not yet available.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 33 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading33">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+        33. Do you provide car rentals or scooter rentals?
+      </button>
+    </h2>
+    <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, we can arrange two-wheeler and car rentals through trusted local vendors. Kindly inform us during your reservation or check-in.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 34 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading34">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
+        34. Is KEVINS suitable for families with children?
+      </button>
+    </h2>
+    <div id="collapse34" class="accordion-collapse collapse" aria-labelledby="heading34" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Absolutely! KEVINS Bed &amp; Breakfast is a family-friendly property. Children of all ages are welcome, and extra beds can be arranged upon request (additional charge applies).</p>
+      </div>
+    </div>
+  </div>
+  <!-- 35 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading35">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse35" aria-expanded="false" aria-controls="collapse35">
+        35. Is KEVINS safe for solo travellers, especially women?
+      </button>
+    </h2>
+    <div id="collapse35" class="accordion-collapse collapse" aria-labelledby="heading35" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Yes, KEVINS offers a secure, welcoming environment with CCTV surveillance, courteous staff, and 24-hour assistance, making it a great choice for solo travellers, including women.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 36 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading36">
+      <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse36" aria-expanded="false" aria-controls="collapse36">
+        36. Whom do I contact for bookings, queries or assistance?
+      </button>
+    </h2>
+    <div id="collapse36" class="accordion-collapse collapse" aria-labelledby="heading36" data-bs-parent="#accordionExampletwo">
+      <div class="accordion-body">
+        <p>Contact us at +91 99332 83649 or <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
                         </div>
                     </div>
                 </div>
@@ -467,165 +576,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="rx-main-footer padding-tb-100">
-            <div class="container">
-                <div class="row mb-minus-24">
-                    <div class="col-lg-3 col-sm-6 col-12 mb-24 footer-order-1">
-                        <div class="rx-social-media">
-                            <div class="rx-logo">
-                                <img src="assets/img/logo/logo.png" alt="logo">
-                            </div>
-                            <div class="inner-contact">
-                                <p>Our hotel seamlessly blends timeless 
-                                    charm with modern amenities, offering 
-                                    an unparalleled experience for travelers.</p>
-                            </div>
-                            <div class="rx-social-logo">
-                                <div class="inner-logo">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/img/logo/logo-footer-1.png" alt="logo-footer-1">
-                                    </a>
-                                </div>
-                                <div class="inner-logo">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/img/logo/logo-footer-2.png" alt="logo-footer-2">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-4 col-6 col-420-full mb-24 footer-order-2">
-                        <div class="rx-footer-items">
-                            <div class="rx-items-heading">
-                                <h4>Explore</h4>
-                            </div>
-                            <div class="rx-items-contact">
-                                <ul>
 
-                                    <li>
-                                        <a href="spa.html">Spa & Beauty</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Gym & Fitness</a>
-                                    </li>
-                                    <li>
-                                        <a href="rooms.html">Rooms & Suites</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Book Now</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-4 col-6 col-420-full mb-24 footer-order-3">
-                        <div class="rx-footer-items">
-                            <div class="rx-items-heading">
-                                <h4>City Branches</h4>
-                            </div>
-                            <div class="rx-items-contact">
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0)">Bharat</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Mexico</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Venezuela</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Germany</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Austraila</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Califarnia</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-4 col-6 col-420-full mb-24 footer-order-4">
-                        <div class="rx-footer-items">
-                            <div class="rx-items-heading">
-                                <h4>Contact</h4>
-                            </div>
-                            <div class="rx-items-contact">
-                                <ul>
-                                    <li>
-                                        <a href="about.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Car Rentals</a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Privacy Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Terms & Conditions</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-6 col-420-full mb-24 footer-order-5">
-                        <div class="rx-footer-other-info">
-                            <div class="inner-info">
-                                <h5>Address</h5>
-                                <p>987-A, Dudhivadar, Rajkot, Gujarat, 
-                                    Bharat - 360410.</p>
-                            </div>
-                            <div class="inner-info">
-                                <h5>Email</h5>
-                                <a href="javascript:void(0)">example@rx-email.com</a>
-                            </div>
-                            <div class="inner-info">
-                                <h5>Phone No</h5>
-                                <a href="javascript:void(0)">+91(1234)(567)(890)</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="rx-footer-copy">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="rx-footer-inner-contact">
-                            <div class="rx-footer-left-side-contact">
-                                <p>&copy; 2024 <a href="index.html">Royalx</a>, All Rights Reserved.</p>
-                            </div>
-                            <div class="rx-footer-last-logo">
-                                <div class="rx-inner-footer-logo">
-                                    <a href="javascript:void(0)"><i class="ri-facebook-line"></i></a>
-                                </div>
-                                <div class="rx-inner-footer-logo">
-                                    <a href="javascript:void(0)"><i class="ri-instagram-line"></i></a>
-                                </div>
-                                <div class="rx-inner-footer-logo">
-                                    <a href="javascript:void(0)"><i class="ri-linkedin-line"></i></a>
-                                </div>
-                                <div class="rx-inner-footer-logo">
-                                    <a href="javascript:void(0)"><i class="ri-twitter-x-line"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    @include('partials.footer')
 
     <!-- Back to top  -->
     <a href="#Top" class="back-to-top result-placeholder">
@@ -637,66 +590,6 @@
         </div>
     </a>
 
-    <!-- Book Room Modal -->
-    <div class="rx-modal modal fade" id="rx_booking_from">
-        <div class="rx-modal-dialog modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="sub-title">
-                    <h4>Check Availability</h4>
-                </div>
-                <button type="button" class="qty-close" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="ri-close-line"></i>
-                </button>
-                <div class="modal-body">
-                    <div class="rx-booking-from">
-                        <form action="#">
-                            <div class="rx-inner-input">
-                                <label for="checkin">Check in*</label>
-                                <input type="text" id="checkin" class="rx-from-control datepicker">
-                            </div>
-                            <div class="rx-inner-input">
-                                <label for="checkout">Check Out*</label>
-                                <input type="text" id="checkout" class="rx-from-control datepicker">
-                            </div>
-                            <div class="rx-inner-input">
-                                <label for="rooms">Room Type*</label>
-                                <select class="rx-from-control form-select" aria-label="Select Method" id="rooms">
-                                    <option selected>Select</option>
-                                    <option value="1">Junior Suite</option>
-                                    <option value="2">Twin Room</option>
-                                    <option value="3">Quad Room</option>
-                                    <option value="4">Deluxe Room</option>
-                                    <option value="5">Executive Room</option>
-                                    <option value="6">Presidential Room</option>
-                                </select>
-                            </div>
-                            <div class="rx-inner-input">
-                                <label for="adults">Adults*</label>
-                                <select class="rx-from-control form-select" aria-label="Select Method" id="adults">
-                                    <option selected>Select</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="rx-inner-input">
-                                <label for="children">Children*</label>
-                                <select class="rx-from-control form-select" aria-label="Select Method" id="children">
-                                    <option selected>Select</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="rx-inner-button">
-                                <a href="javascript:void(0)" class="rx-btn-two">Book Room</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Feature tools -->
     <div class="rx-tools-sidebar-overlay"></div>
@@ -811,8 +704,9 @@
     <!-- main-js -->
     <script src="assets/js/main.js"></script>
         
+    
 </body>
     
 
-<!-- Mirrored from maraviyainfotech.com/projects/royalx-html/royalx-html/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Jan 2025 05:47:16 GMT -->
+
 </html>

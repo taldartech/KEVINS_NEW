@@ -65,6 +65,18 @@ Route::get('/standard-room', function (){
     return view('standard-room');
 })->name('standard-room');
 
+Route::get('/terms', function () {
+    return view('terms');
+})->name('terms');
+
+Route::get('/refund-policy', function () {
+    return view('refund-policy');
+})->name('refund-policy');
+
+Route::get('/faq', function () {
+    return view('faq');
+})->name('faq');
+
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);

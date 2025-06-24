@@ -59,13 +59,13 @@
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
                                                 <p>Welcome to Kevins Bed & Breakfast</p>
-                                                <h2>Your Home in <span>Port</span> <span>Blair</span></h2>
+                                                <h2>Your Home in <span>Sri Vijaya</span> <span>Puram(Port Blair)</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true"><p>Book Now</p></a>
+                                                        <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -84,14 +84,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Luxury Accommodations</p>
-                                                <h2>Experience Our <span>Deluxe</span> <span>Rooms</span></h2>
+                                                <p>Discover Andaman Like Never Before</p>
+                                                <h2>Your Island<span> Escape Begins </span> <span>Here</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                    <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -110,14 +110,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Comfortable Stay</p>
-                                                <h2>Cozy <span>Standard</span> <span>Rooms</span></h2>
+                                                <p>Live the Island Dream</p>
+                                                <h2> Stay. Explore. Repeat <span>with Kevin’s</span> <span>personal touch.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                         <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -138,14 +138,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Modern Amenities</p>
-                                                <h2>Spacious <span>Common</span> <span>Areas</span></h2>
+                                                <p>Luxury and nature come together at Kevin’s </p>
+                                                <h2>Escape<span> to </span> <span>Paradise</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                         <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -164,14 +164,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Dining Excellence</p>
-                                                <h2>Explore <span>Local</span> <span>Cuisine</span></h2>
+                                                <p>Wake up to the sound of waves and sunsets that stay with you forever</p>
+                                                <h2>Stay by the Shore,<span> Feel at </span> <span>Home</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                         <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -192,14 +192,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Dining Excellence</p>
-                                                <h2>Explore <span>Local</span> <span>Cuisine</span></h2>
+                                                <p>Explore ancient forts, colonial tales, and the rich history</p>
+                                                <h2>Walk Through <span>Time</span> <span> in Andaman</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                         <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -219,14 +219,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Dining Excellence</p>
-                                                <h2>Explore <span>Local</span> <span>Cuisine</span></h2>
+                                                <p>Experience the thrill of water sports in the heart of Andaman</p>
+                                                <h2>Ride the Waves <span> ,Feel </span> <span>the Rush</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                         <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -246,14 +246,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Dining Excellence</p>
-                                                <h2>Explore <span>Local</span> <span>Cuisine</span></h2>
+                                                <p>From snorkeling to jet skiing – thrill meets the tide in Andaman’s crystal waters.</p>
+                                                <h2>Dive<span> Into </span> <span>Adventure</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                         <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>
@@ -277,14 +277,14 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Dining Excellence</p>
-                                                <h2>Explore <span>Local</span> <span>Cuisine</span></h2>
+                                                <p>Let the gentle waves and salty breeze melt your stress away.</p>
+                                                <h2>Peace by <span> the </span> <span>Sea</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
                                                     </div>
                                                     <div class="booking-text">
-                                                        <p>Book Now</p>
+                                                         <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank"><p>Book Now</p></a>
                                                         <span>993 328 3649</span>
                                                     </div>
                                                 </div>

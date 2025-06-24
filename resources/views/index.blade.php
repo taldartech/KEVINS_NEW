@@ -313,7 +313,7 @@
                     <div class="rx-about-contact">
                         <div class="rx-banner">
                             <!-- <p>The Royalx Hotel</p> -->
-                            <h4>Why choose <span>Kevins Bed & Breakfast</span>?</h4>
+                            <h4 id="why-choose-kevins">Why choose <span>Kevins Bed & Breakfast</span>?</h4>
                         </div>
                         <div class="inner-contact">
                         <ul>

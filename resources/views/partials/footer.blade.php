@@ -75,7 +75,7 @@
                             </div>
                             <div class="rx-items-contact">
                                 <ul>
-                                    <li><a class="nav-link" href="{{ route('home') }}">About Us</a></li>
+                                    <li><a class="nav-link" href="#why-choose-kevins">About Us</a></li>
                                     <li><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                                     <li>
                                         <a href="https://www.google.com/maps/dir//99%2F5,+J.N.Road,+Near+Airtel+Office,+744102,+Delanipur,+Sri+Vijaya+Puram,+Andaman+and+Nicobar+Islands+744102/@11.6710499,92.6441325,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x308895a65ad4e3f7:0x729b7978491608a6!2m2!1d92.7265344!2d11.6710616?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">Directions</a>
@@ -126,6 +126,32 @@
             </div>
         </div>
     </footer>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const aboutLink = document.querySelector('a.nav-link[href="#why-choose-kevins"]');
+    if (aboutLink) {
+      aboutLink.addEventListener('click', function (e) {
+        const target = document.getElementById('why-choose-kevins');
+        if (target) {
+          e.preventDefault();
+          const offset = 240; // px, adjust as needed for your header
+          const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - offset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    }
+  });
+</script>
+
 <!-- WhatsApp Chat Widget -->
 <a aria-label="Chat on WhatsApp" href="https://wa.me/919933283649?text=Welcome%20to%20Kevins%20B%26B%20-%20Port%20Blair" target="_blank" id="whatsapp-chat-widget" style="position: fixed; left: 10px; bottom: 10px; z-index: 9999; box-shadow: 0 2px 8px rgba(0,0,0,0.15); border-radius: 50%;">
     <img alt="Chat on WhatsApp" src="/assets/img/whatsapp.png" style="height:60px;width:60px;" />

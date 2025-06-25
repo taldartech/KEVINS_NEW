@@ -81,6 +81,10 @@ Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 })->name('privacy-policy');
 
+Route::get('/disclaimer', function () {
+    return view('disclaimer');
+})->name('disclaimer');
+
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);

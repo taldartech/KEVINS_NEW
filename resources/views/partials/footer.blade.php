@@ -33,37 +33,30 @@
                             </div>
                             <div class="rx-items-contact">
                                 <ul>
-    <li><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-    <li><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
-    <li><a class="nav-link" href="{{ route('rooms') }}">Rooms</a></li>
-    <li><a class="nav-link" href="{{ route('restaurants') }}">Nearby Restaurants</a></li>
-    <li><a class="nav-link" href="https://www.google.com/maps/@11.6710447,92.7264715,3a,90y,289.86h,88.83t/data=!3m8!1e1!3m6!1sAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H%3Dw114-h120-k-no-pi-0-ya71.64512-ro-0-fo100!7i5376!8i2688?shorturl=1" target="_blank" rel="noopener">Virtual Tour</a></li>
-    <li><a class="nav-link" href="{{ route('tour-packages') }}">Special Tour Packages</a></li>
-    <li><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
-    <li><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
-</ul>
+                                    <li><a class="nav-link" href="{{ route('home') }}">Home</a></li>
+                                    <li><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
+                                    <li><a class="nav-link" href="{{ route('rooms') }}">Rooms</a></li>
+                                    <li><a class="nav-link" href="{{ route('restaurants') }}">Nearby Restaurants</a></li>
+                                    <li><a class="nav-link" href="https://www.google.com/maps/@11.6710447,92.7264715,3a,90y,289.86h,88.83t/data=!3m8!1e1!3m6!1sAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H%3Dw114-h120-k-no-pi-0-ya71.64512-ro-0-fo100!7i5376!8i2688?shorturl=1" target="_blank" rel="noopener">Virtual Tour</a></li>
+                                    <li><a class="nav-link" href="{{ route('tour-packages') }}">Special Tour Packages</a></li>
+                                    <li><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                                    
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6 col-420-full mb-24 footer-order-3">
                         <div class="rx-footer-items">
                             <div class="rx-items-heading">
-                                <h4>Landmarks Nearby</h4>
+                                <h4>Our Policy</h4>
                             </div>
                             <div class="rx-items-contact">
                                 <ul>
-                                    <li>
-                                        <a href="javascript:void(0)">Veer Savarkar Airport (10 min)</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Cellular Jail (5 min)</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Corbyn's Cove Beach (15 min)</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Ross Island (Ferry ride)</a>
-                                    </li>
+                                    <li><a class="nav-link" href="{{ url('terms') }}">Terms &amp; Conditions</a></li>
+                                    <li><a class="nav-link" href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
+                                    <li><a class="nav-link" href="{{ url('disclaimer') }}">Disclaimer & Cookie Policy</a></li>
+                                    <li><a class="nav-link" href="{{ url('refund-policy') }}">Refund &amp; Cancellation Policy</a></li>
+                                    <li><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -75,34 +68,21 @@
                             </div>
                             <div class="rx-items-contact">
                                 <ul>
-                                    <li><a class="nav-link" href="#why-choose-kevins">About Us</a></li>
                                     <li><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
-                                    <li><a class="nav-link" href="{{ url('terms') }}">Terms &amp; Conditions</a></li>
-<li><a class="nav-link" href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
-<li><a class="nav-link" href="{{ url('disclaimer') }}">Website Disclaimer</a></li>
-<li><a class="nav-link" href="{{ url('refund-policy') }}">Refund &amp; Cancellation Policy</a></li>
-<li><a class="nav-link" href="{{ url('faq') }}">FAQ</a></li>
                                     <li>
                                         <a href="https://www.google.com/maps/dir//99%2F5,+J.N.Road,+Near+Airtel+Office,+744102,+Delanipur,+Sri+Vijaya+Puram,+Andaman+and+Nicobar+Islands+744102/@11.6710499,92.6441325,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x308895a65ad4e3f7:0x729b7978491608a6!2m2!1d92.7265344!2d11.6710616?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">Directions</a>
                                     </li>
-                                    <!-- <li>
-                                        <a href="faq.html">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Privacy Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Terms & Conditions</a>
-                                    </li> -->
                                 </ul>
                             </div>
                         </div>
+
+                        
                     </div>
                     <div class="col-lg-3 col-sm-6 col-6 col-420-full mb-24 footer-order-5">
                         <div class="rx-footer-other-info">
                             <div class="inner-info">
                                 <h5>Address</h5>
-                                <p>KEVINS Bed & Breakfast, 99/5, J.N.Road, Near Makruzz/Airtel Office, Delanipur Port Blair, Andaman & Nicobar Islands, India - 744102.</p>
+                                <p>KEVINS Bed & Breakfast, 99/5, J.N.Road, Near Makruzz/Airtel Office, Delanipur Sri Vijaya Puram(Port Blair), Andaman & Nicobar Islands, India - 744102.</p>
                             </div>
                             <div class="inner-info">
                                 <h5>Email</h5>

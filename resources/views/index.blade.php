@@ -58,8 +58,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Welcome to Kevins Bed & Breakfast</p>
-                                                <h2>Your Home in <span>Sri Vijaya</span> <span>Puram(Port Blair)</span></h2>
+                                                <p>Welcome to KEVINS Bed & Breakfast</p>
+                                                <h2>Your cosy island home in <span>Sri Vijaya</span> <span>Puram(Port Blair)</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -84,8 +84,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Discover Andaman Like Never Before</p>
-                                                <h2>Your Island<span> Escape Begins </span> <span>Here</span></h2>
+                                                <p> Wake Up by the Waves</p>
+                                                <h2>Sunsets that <span> stay with </span> <span>you forever.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -111,7 +111,7 @@
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
                                                 <p>Live the Island Dream</p>
-                                                <h2> Stay. Explore. Repeat <span>with Kevin’s</span> <span>personal touch.</span></h2>
+                                                <h2> Your island Repeat <span> journey starts </span> <span>at KEVINS.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -138,8 +138,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Luxury and nature come together at Kevin’s </p>
-                                                <h2>Escape<span> to </span> <span>Paradise</span></h2>
+                                                <p>Hidden by Nature</p>
+                                                <h2>Step into <span> Andaman’s serene </span> <span>wilderness.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -164,8 +164,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Wake up to the sound of waves and sunsets that stay with you forever</p>
-                                                <h2>Stay by the Shore,<span> Feel at </span> <span>Home</span></h2>
+                                                <p>Sail into Stillness</p>
+                                                <h2>Moments of <span> calm on</span> <span>open waters.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -192,8 +192,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Explore ancient forts, colonial tales, and the rich history</p>
-                                                <h2>Walk Through <span>Time</span> <span> in Andaman</span></h2>
+                                                <p>Walk Through Time</p>
+                                                <h2>Explore Andaman’s <span>colonial past</span> <span> and heritage.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -219,8 +219,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Experience the thrill of water sports in the heart of Andaman</p>
-                                                <h2>Ride the Waves <span> ,Feel </span> <span>the Rush</span></h2>
+                                                <p>Adventure Starts Here</p>
+                                                <h2>Glide through <span>glowing waters</span> <span>by night.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -246,8 +246,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>From snorkeling to jet skiing – thrill meets the tide in Andaman’s crystal waters.</p>
-                                                <h2>Dive<span> Into </span> <span>Adventure</span></h2>
+                                                <p>  Dive into the Action</p>
+                                                <h2>Discover<span> Andaman’s vibrant  </span> <span>marine life.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -277,8 +277,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="inner-contact slider-animation">
-                                                <p>Let the gentle waves and salty breeze melt your stress away.</p>
-                                                <h2>Peace by <span> the </span> <span>Sea</span></h2>
+                                                <p>Rooted in Pride</p>
+                                                <h2>Celebrate India’s <span>spirit by</span> <span> the sea.</span></h2>
                                                 <div class="booking-now">
                                                     <div class="ico">
                                                         <i class="ri-phone-line"></i>
@@ -313,32 +313,44 @@
                     <div class="rx-about-contact">
                         <div class="rx-banner">
                             <!-- <p>The Royalx Hotel</p> -->
-                            <h4 id="why-choose-kevins">Why choose <span>Kevins Bed & Breakfast</span>?</h4>
+                            <h4 id="why-choose-kevins">Welcome to <span>Kevins Bed & Breakfast</span>  - Your Gateway
+                            to <span>the Andamans</span> </h4>
                         </div>
                         <div class="inner-contact">
-                        <ul>
-                            <li><strong>Prime Location</strong> – Close to key attractions like Cellular Jail, Corbyn’s Cove Beach, Aberdeen Bazaar and the Phoenix Bay/Haddo Jetty — your gateway to Havelock and Neil Islands.</li>
-                            <li><strong>Comfortable, Well-Appointed Rooms</strong> – Clean, cozy, and fully equipped for families, couples, and solo travelers.</li>
-                            <li><strong>Complimentary Breakfast</strong> – Begin your day with a thoughtfully prepared homemade breakfast, included with your stay.</li>
-                            <li><strong>Great Value for Money</strong> – Perfect for guests looking for a budget hotel in Port Blair without compromising on quality.</li>
-                            <li><strong>Family-Friendly Environment</strong> – A great choice for those searching for a guesthouse near the beach in Port Blair or a family-friendly stay in Andaman. Whether you're catching a ferry to Havelock for water adventures or heading to Neil Island for quiet beaches, our location and travel assistance make KEVINS the ideal starting point.</li>
-                        </ul>
+                        <p>
+                        When you stay at KEVINS, your Andaman experience takes center stage. Whetheryou’ve come to Port Blair to explore historic sites like Cellular Jail, relax at Corbyn’sCove Beach, or catch the ferry to Havelock and Neil Islands, KEVINS Bed &amp; Breakfastplaces you exactly where you need to be. Conveniently located near Port Blair Airport,the city’s main attractions, and major ferry terminals, we offer you a calm, stress-freebase at one of the best budget hotels in Port Blair.
+                        </p>
+                        <p>
+                        Our clean, comfortable rooms are thoughtfully designed for families, couples, and solo
+travelers looking for a value-for-money hotel in Port Blair that doesn’t compromise on
+comfort or service. Each stay includes a complimentary homemade breakfast,
+personalized local guidance, easy ferry bookings, and quick airport transfers, allowing
+you to focus entirely on enjoying your Andaman holiday while we handle the details.
+</p>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="rx-about-contact">
                         <div class="rx-banner">
-                            <h4><span>Experience</span> the <span>Difference</span> at <span>KEVINS</span> </h4>
+                            <h4><span>Exceptional Comfort.</span>  Personalized Service.  <span>Effortless
+                            Stays.</span></h4>
                         </div>
                         <div class="inner-contact">
-                            <p>At KEVINS, we go beyond accommodation. Whether you're planning a relaxing holiday, a romantic getaway, or a short business visit, our team is here to make your stay stress-free and memorable.</p>
-                            <p>Guests love our personalized service, peaceful ambiance, and thoughtful amenities — making us one of the best choices for a Port Blair homestay or bed and breakfast in Andaman near the ferry terminal to Havelock and Neil.
+                            <p>At KEVINS, you are always our priority. Whether you&#39;re here for a relaxing family
+vacation, a romantic escape, or a short business trip, our attentive team is dedicated to
+making your stay smooth, comfortable, and memorable. With thoughtful touches, a
+peaceful atmosphere, and genuine care, KEVINS has become one of the most trusted
+options for travelers searching for a homestay in Port Blair near the airport, a
+guesthouse close to the ferry terminal, or a reliable Bed &amp; Breakfast in Andaman &amp;
+Nicobar Islands.</p>
+                            <p>From exploring pristine beaches and vibrant markets to visiting enriching museums,
+historic landmarks, and island-hopping adventures, your stay is entirely yours to design.
+At KEVINS Bed &amp; Breakfast, we simply make it easy, comfortable, and unforgettable,
+ensuring your Andaman story begins in the best possible way.
                             </p>
-                            <p > <strong>Ready to Stay with Us?</strong>
-                            Whether you’re exploring colonial history in Port Blair, diving in Havelock’s turquoise waters, or unwinding on Neil’s tranquil shores — KEVINS Bed &amp; Breakfast is where your Andaman story begins.<br>
-                            Don’t just visit Port Blair — experience it with KEVINS.
-                            </p>
+                            
                             <div class="text-center">
                                 <a href="https://bookingengine.stayflexi.com/?hotel_id=20862&checkin=10-14-2020&checkout=10-15-2020&num_nights=1&checkinSlot=10&checkinSlot=10&num_guests=1&widget=true" target="_blank" class="rx-btn-two">Book Your Stay Now</a>
                             </div>

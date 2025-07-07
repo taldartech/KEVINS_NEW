@@ -18,7 +18,7 @@
                             <div class="inner-info">
                                 <h3 style="color: #fff;">Follow Us</h3>
                                 <div class="rx-footer-social" style="padding-top: 1rem;">
-                                    <a href="https://www.facebook.com/KevinsBedBreakfast" target="_blank"><i class="ri-facebook-fill" style="font-size: 1.5rem;"></i></a>
+                                    <a href="https://www.facebook.com/share/r/18s4o53N5L/" target="_blank"><i class="ri-facebook-fill" style="font-size: 1.5rem;"></i></a>
                                     <a href="https://www.instagram.com/kevinshomestay2016" target="_blank"><i class="ri-instagram-fill" style="font-size: 1.5rem;"></i></a>
                                     <a href="https://www.pinterest.com/KevinsAndaman" target="_blank"><i class="ri-pinterest-fill" style="font-size: 1.5rem;"></i></a>
                                     <a href="https://www.kevinsandaman.com" target="_blank"><i class="ri-global-line" style="font-size: 1.5rem;"></i></a>

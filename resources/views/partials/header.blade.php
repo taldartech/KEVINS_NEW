@@ -60,7 +60,7 @@
          <div class="rx-mobile-menu-overlay"></div>
          <div id="rx-mobile-menu" class="rx-mobile-menu">
             <div class="rx-menu-title">
-                <span class="menu_title">My Menu</span>
+                <span class="menu_title">Kevins Bed & Breakfast</span>
                 <button type="button" class="rx-close-menu">×</button>
             </div>
             <div class="rx-menu-inner">
@@ -69,27 +69,22 @@
                         <div class="rx-menu-contact">
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="{{ route('home') }}">Home</a>
                                 </li>
                                 <li>
-                                    <a href="gallery.html">Gallery</a>
+                                    <a href="{{ route('gallery') }}">Gallery</a>
                                 </li>
                                 <li>
-                                    <a href="rooms.html">Rooms</a>
+                                    <a href="{{ route('rooms') }}">Rooms</a>
                                 </li>
-      
                                 <li>
                                     <a href="https://www.google.com/maps/@11.6710447,92.7264715,3a,90y,289.86h,88.83t/data=!3m8!1e1!3m6!1sAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMaHOoh0g3_2l6H4lBO5Zurpdpu9sTeFrRf5j7H%3Dw114-h120-k-no-pi-0-ya71.64512-ro-0-fo100!7i5376!8i2688?shorturl=1" target="_blank" rel="noopener">Virtual Tour</a>
                                 </li>
-                                <li>
-                                    <a href="tour-packages.html">Special Tour Packages</a>
-                                </li>
-                                <li>
-                                    <a href="blog.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
+                                <li><a href="{{ route('nearby-attractions') }}">Nearby Attractions</a></li>
+                                <li><a href="{{ route('tour-packages') }}">Special Tour Packages</a></li>
+                                <li><a href="{{ route('blog') }}">Blog</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                                
                                 
                             </ul>
                         </div>
@@ -100,16 +95,16 @@
                         <div class="header-top-social">
                             <ul class="mb-0">
                                 <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-facebook-fill"></i></a>
+                                    <a href="https://www.facebook.com/share/r/18s4o53N5L/" target="_blank"><i class="ri-facebook-fill"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-twitter-fill"></i></a>
+                                    <a href="https://www.twitter.com/kevinshomestay2016" target="_blank"><i class="ri-twitter-fill"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-instagram-line"></i></a>
+                                    <a href="https://www.instagram.com/kevinshomestay2016" target="_blank"><i class="ri-instagram-line"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="javascript:void(0)"><i class="ri-linkedin-fill"></i></a>
+                                    <a href="https://www.linkedin.com/in/kevinshomestay2016" target="_blank"><i class="ri-linkedin-fill"></i></a>
                                 </li>
                             </ul>
                         </div>

@@ -5311,3 +5311,116 @@ figure {
         max-width: 95vw;
     }
 }
+
+/* ===========================
+    Mobile Responsive Fixes
+=========================== */
+@media (max-width: 991px) {
+  .container,
+  .container-fulid,
+  .container-fluid {
+    max-width: 100vw;
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .col-12, .col-md-6, .col-md-4, .col-md-3, .col-md-8, .col-md-9 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .container,
+  .container-fulid,
+  .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .col-12, .col-md-6, .col-md-4, .col-md-3, .col-md-8, .col-md-9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  img, .banner-arrow-img, .rx-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .rx-slider, .rx-slide {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    margin: 0 auto;
+  }
+  .rx-hero-contact, .inner-contact {
+    padding: 15px 5px !important;
+    font-size: 1rem !important;
+  }
+  .booking-now {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .booking-now .ico {
+    margin-bottom: 3px;
+  }
+  .booking-text p, .booking-text span {
+    font-size: 1rem !important;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1.2rem !important;
+    word-break: break-word;
+  }
+  .rx-loader {
+    height: 100vh !important;
+  }
+  .ad-popup {
+    left: 0 !important;
+    right: 0 !important;
+    max-width: 100vw !important;
+    padding: 12px 2vw 10px 2vw !important;
+  }
+}
+@media (max-width: 576px) {
+  .container,
+  .container-fulid,
+  .container-fluid {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .rx-slider, .rx-slide {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    margin: 0 auto;
+  }
+  .rx-hero-contact, .inner-contact {
+    padding: 10px 2px !important;
+    font-size: 0.95rem !important;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1rem !important;
+  }
+  .ad-popup {
+    left: 0 !important;
+    right: 0 !important;
+    max-width: 100vw !important;
+    padding: 8px 1vw 8px 1vw !important;
+  }
+}
+
+/* Utility to prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}

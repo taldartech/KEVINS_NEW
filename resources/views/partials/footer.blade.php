@@ -86,7 +86,7 @@
                             </div>
                             <div class="inner-info">
                                 <h5>Email</h5>
-                                <a href="mailto:kevinsandaman@gmail.com">kevinsandaman@gmail.com</a>
+                                <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a>
                             </div>
                             <div class="inner-info">
                                 <h5>Phone</h5>

@@ -158,7 +158,6 @@
   <h2>8. Liability & Indemnity</h2>
   <ul>
     <li>Guests are liable for any damage to property due to negligence or misconduct.</li>
-    <li>KEVINS Bed & Breakfast is located in a natural environment; guests acknowledge inherent risks associated with wildlife.</li>
     <li>KEVINS Bed & Breakfast, its management, owners, and staff are not liable for injury, loss, or damage sustained during your stay.</li>
   </ul>
 
@@ -172,7 +171,8 @@
   <p>By booking with KEVINS Bed & Breakfast, guests confirm their acceptance of these Terms & Conditions. The primary guest accepts responsibility on behalf of their party and invitees.</p>
 
   <div class="contact">
-    <h3>Contact Information</h3>
+    <h3>Contact Us</h3>
+    <p>For any questions or to modify your reservation:</p>
     <p><strong>KEVINS Bed & Breakfast</strong><br>
     Phone: +91 9933283649<br>
     Email: <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a></p>

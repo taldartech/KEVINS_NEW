@@ -116,9 +116,11 @@
                     <p>By using our website, you consent to the use of cookies as outlined above.</p>
 
                     <div class="contact">
-                    <h3>Contact Us</h3>
-                    <p>For any questions or concerns, please contact:<br>
-                    <strong>Email:</strong> <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a></p>
+                        <h3>Contact Us</h3>
+                        <p>For any questions or to modify your reservation:</p>
+                        <p><strong>KEVINS Bed & Breakfast</strong><br>
+                        Phone: +91 9933283649<br>
+                        Email: <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a></p>
                     </div>
                 </div>
             </div>

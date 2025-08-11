@@ -109,7 +109,7 @@
                         Phone: +91 9933283649<br>
                         Email: <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a></p>
                     </div>
-                    </div>
+
                 </div>
             </div>
         </div>

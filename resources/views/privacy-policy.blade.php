@@ -126,12 +126,11 @@
                 </ul>
                 <h2>8. Contact Us</h2>
                 <div class="contact">
-                    <h3>Contact Information</h3>
-                    <p><strong>KEVINS Bed &amp; Breakfast</strong><br>
+                        <p>For any questions or to modify your reservation:</p>
+                        <p><strong>KEVINS Bed & Breakfast</strong><br>
                         Phone: +91 9933283649<br>
-                        Email: <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a>
-                    </p>
-                </div>
+                        Email: <a href="mailto:kevinshomestay@gmail.com">kevinshomestay@gmail.com</a></p>
+                    </div>
             </div>
         </div>
     </div>

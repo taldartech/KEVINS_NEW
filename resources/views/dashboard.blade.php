@@ -1,9 +1,5 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Admin Dashboard') }}
-        </h2>
-    </x-slot>
+   
     <div x-data="{ tab: 'welcome' }" class="flex min-h-screen">
         <aside class="w-64 bg-white border-r border-gray-200 shadow-lg flex flex-col h-full">
             <nav class="flex-1 px-4 py-6">
@@ -15,7 +11,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('admin.rooms.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.rooms.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
+                        <a href="{{ route('admin.tour-packages.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.rooms.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10V6a2 2 0 012-2h12a2 2 0 012 2v4M4 10v10a2 2 0 002 2h12a2 2 0 002-2V10M4 10h16" /></svg>
                             Special Tour Packages
                         </a>
@@ -112,3 +108,5 @@
         </main>
     </div>
 </x-app-layout>
+
+@vite(['resources/css/app.css', 'resources/js/app.js'])

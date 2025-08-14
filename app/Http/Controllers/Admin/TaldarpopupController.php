@@ -22,7 +22,7 @@ class TaldarpopupController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.taldarpopups.create');
     }
 
     /**
@@ -30,15 +30,29 @@ class TaldarpopupController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'content' => 'required|string',
+            'link' => 'required|string',
+            'is_active' => 'required|boolean',
+        ]);
+        // dd($request->all());
+
+        Taldarpopup::create($request->all());
+
+        return redirect()->route('admin.taldarpopups.index')->with('success', 'Taldarpopup created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Taldarpopup $taldarpopup)
+    public function show()
     {
-        //
+        $taldarpopup = Taldarpopup::where('is_active', 1)->first();
+        if (!$taldarpopup) {
+            return redirect()->route('admin.taldarpopups.index')->with('error', 'No active taldarpopup found.');
+        }
+        return view('partials.taldar-popup', compact('taldarpopup'));
     }
 
     /**
@@ -46,7 +60,8 @@ class TaldarpopupController extends Controller
      */
     public function edit(Taldarpopup $taldarpopup)
     {
-        //
+
+        return view('admin.taldarpopups.edit', compact('taldarpopup'));
     }
 
     /**
@@ -54,7 +69,16 @@ class TaldarpopupController extends Controller
      */
     public function update(Request $request, Taldarpopup $taldarpopup)
     {
-        //
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'content' => 'required|string',
+            'link' => 'required|string',
+            'is_active' => 'required|boolean',
+        ]);
+
+        $taldarpopup->update($request->all());
+
+        return redirect()->route('admin.taldarpopups.index')->with('success', 'Taldarpopup updated successfully.');
     }
 
     /**
@@ -62,6 +86,8 @@ class TaldarpopupController extends Controller
      */
     public function destroy(Taldarpopup $taldarpopup)
     {
-        //
+        $taldarpopup->delete();
+
+        return redirect()->route('admin.taldarpopups.index')->with('success', 'Taldarpopup deleted successfully.');
     }
 }

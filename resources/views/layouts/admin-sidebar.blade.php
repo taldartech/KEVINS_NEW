@@ -1,4 +1,4 @@
-<aside class="fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 shadow-lg flex flex-col z-40">
+{{-- <aside class="fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 shadow-lg flex flex-col z-40">
     <div class="p-6 border-b">
         <a href="{{ route('dashboard') }}" class="text-xl font-bold text-gray-800">Admin Panel</a>
     </div>
@@ -39,7 +39,7 @@
                     Taldarpopup (coming soon)
                 </a>
             </li> --}}
-        </ul>
+        {{-- </ul>
     </nav>
     <div class="p-4 border-t mt-auto">
         <form method="POST" action="{{ route('logout') }}">
@@ -47,4 +47,5 @@
             <button type="submit" class="w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-red-600">Logout</button>
         </form>
     </div>
-</aside>
+</aside> --}}
+

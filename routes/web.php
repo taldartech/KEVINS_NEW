@@ -85,8 +85,8 @@ Route::get('/disclaimer', function () {
     return view('disclaimer');
 })->name('disclaimer');
 
-
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    Route::resource('taldarpopups', App\Http\Controllers\Admin\TaldarpopupController::class);
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);
 });
 

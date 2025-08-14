@@ -21,7 +21,7 @@
                 @if (request()->is('admin*'))
                     @include('layouts.admin-sidebar')
                 @endif
-                <div class="flex-1 min-h-screen ml-0" style="margin-left: 16rem;">
+                <div class="flex-1 min-h-screen ml-0">
                     <!-- Page Heading -->
                     @isset($header)
                         <header class="bg-white shadow">

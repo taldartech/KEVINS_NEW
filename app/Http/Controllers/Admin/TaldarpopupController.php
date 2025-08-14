@@ -13,7 +13,8 @@ class TaldarpopupController extends Controller
      */
     public function index()
     {
-        //
+        $taldarpopups = Taldarpopup::all();
+        return view('admin.taldarpopups.index', compact('taldarpopups'));
     }
 
     /**

@@ -2,7 +2,14 @@
 
 @section('content')
 <div class="container py-4">
-    <h2>Edit Tour Package</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Edit Tour Package</h4>
+                </div>
+                <div class="card-body">
+    
     <form action="{{ route('admin.tour-packages.update', $tourPackage) }}" method="POST">
         @csrf
         @method('PUT')
@@ -30,8 +37,14 @@
             <label for="itinerary" class="form-label">Itinerary (comma-separated)</label>
             <input type="text" name="itinerary" id="itinerary" class="form-control" value="{{ is_array($tourPackage->itinerary) ? implode(',', $tourPackage->itinerary) : $tourPackage->itinerary }}">
         </div>
+
+        <div class="d-flex justify-content-between">
         <button type="submit" class="btn btn-success">Update Tour Package</button>
+        
         <a href="{{ route('admin.tour-packages.index') }}" class="btn btn-secondary">Cancel</a>
+    </div>
     </form>
+</div>
+</div>
 </div>
 @endsection

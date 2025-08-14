@@ -98,24 +98,24 @@
                     </div>
                 </div>
                 <!-- Tour Package Cards -->
-            
+            @foreach ($tourPackages as $tourPackage)
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="tour-package-card">
-                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="North Bay & Ross Island" class="tour-img">
+                        <img src="{{ $tourPackage->image_url }}" alt="North Bay & Ross Island" class="tour-img">
                         <div class="p-4">
-                            <div class="tour-title">North Bay & Ross Island</div>
-                            <div class="tour-desc">1 Day Excursion</div>
+                            <div class="tour-title">{{ $tourPackage->name }}</div>
+                            <div class="tour-desc">{{ $tourPackage->duration }}</div>
                             <ul class="tour-list">
-                                <li>Boat transfers</li>
-                                <li>Coral reef snorkeling</li>
-                                <li>Historic ruins tour</li>
-                                <li>Light snacks & water</li>
+                                @foreach ($tourPackage->itinerary as $item)
+                                    <li>{{ $item }}</li>
+                                @endforeach
                             </ul>
-                            <div class="tour-price mb-3">From ₹3,500 per person</div>
-                            <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20North%20Bay%20and%20Ross%20Island" class="tour-inquiry-btn mt-3">Inquire Now</a>
+                            <div class="tour-price mb-3">From ₹{{ $tourPackage->price }} per person</div>
+                            <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20{{ $tourPackage->name }}" class="tour-inquiry-btn mt-3">Inquire Now</a>
                         </div>
                     </div>
                 </div>
+            @endforeach
                 <!-- Package 3 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="tour-package-card">

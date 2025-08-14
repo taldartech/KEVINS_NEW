@@ -35,10 +35,15 @@ class TourPackageController extends Controller
             'description' => 'nullable|string',
             'price' => 'nullable|numeric',
             'duration' => 'nullable|string',
-            'image_url' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
             'itinerary' => 'nullable|string',
         ]);
         $validated['itinerary'] = $validated['itinerary'] ? array_map('trim', explode(',', $validated['itinerary'])) : [];
+          // Handle image upload
+    if ($request->hasFile('image')) {
+        $imagePath = $request->file('image')->store('tour-images', 'public');
+        $validated['image_url'] = 'storage/' . $imagePath; // Save relative path
+    }
         $tourPackage = \App\Models\TourPackage::create($validated);
         return redirect()->route('admin.tour-packages.index')->with('success', 'Tour package created successfully.');
     }
@@ -69,10 +74,15 @@ class TourPackageController extends Controller
             'description' => 'nullable|string',
             'price' => 'nullable|numeric',
             'duration' => 'nullable|string',
-            'image_url' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
             'itinerary' => 'nullable|string',
         ]);
         $validated['itinerary'] = $validated['itinerary'] ? array_map('trim', explode(',', $validated['itinerary'])) : [];
+        // Handle image upload
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('tour-images', 'public');
+            $validated['image_url'] = 'storage/' . $imagePath; // Save relative path
+        }
         $tourPackage->update($validated);
         return redirect()->route('admin.tour-packages.index')->with('success', 'Tour package updated successfully.');
     }

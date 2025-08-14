@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Models\TourPackage;
 
 Route::get('/', function () {
     
@@ -31,7 +32,8 @@ Route::get('/restaurants', function () {
 })->name('restaurants');
 
 Route::get('/tour-packages', function () {
-    return view('tour-packages');
+    $tourPackages = TourPackage::orderByDesc('id')->get();
+    return view('tour-packages', compact('tourPackages'));
 })->name('tour-packages');
 
 Route::get('/blog', function () {
@@ -92,6 +94,8 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     ->name('admin.taldarpopup.show');
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);
     Route::resource('tour-packages', App\Http\Controllers\Admin\TourPackageController::class);
+    Route::get('tour-packages/show', [App\Http\Controllers\Admin\TourPackageController::class, 'show'])
+    ->name('admin.tour-packages.show');
 });
 
 require __DIR__.'/auth.php';

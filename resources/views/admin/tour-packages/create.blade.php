@@ -42,7 +42,7 @@
                     <h4 class="mb-0">Add Tour Package</h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('admin.tour-packages.store') }}" method="POST">
+                    <form action="{{ route('admin.tour-packages.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="mb-3">
@@ -67,7 +67,7 @@
 
                         <div class="mb-3">
                             <label for="image_url" class="form-label">Image URL</label>
-                            <input type="text" name="image_url" id="image_url" class="form-control" placeholder="Enter image URL">
+                            <input type="file" name="image" id="image" class="form-control" placeholder="Enter image URL" accept="image/*">
                         </div>
 
                         <div class="mb-3">

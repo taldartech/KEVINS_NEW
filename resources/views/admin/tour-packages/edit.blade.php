@@ -29,9 +29,10 @@
             <label for="duration" class="form-label">Duration</label>
             <input type="text" name="duration" id="duration" class="form-control" value="{{ $tourPackage->duration }}">
         </div>
+      
         <div class="mb-3">
             <label for="image_url" class="form-label">Image URL</label>
-            <input type="text" name="image_url" id="image_url" class="form-control" value="{{ $tourPackage->image_url }}">
+            <input type="file" name="image" id="image" class="form-control" placeholder="Enter image URL" accept="image/*">
         </div>
         <div class="mb-3">
             <label for="itinerary" class="form-label">Itinerary (comma-separated)</label>

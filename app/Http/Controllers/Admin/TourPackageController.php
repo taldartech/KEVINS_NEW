@@ -28,44 +28,59 @@ class TourPackageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'nullable|string',
-            'price' => 'nullable|numeric',
-            'duration' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif',
-            'itinerary' => 'nullable|string',
-        ]);
-        $validated['itinerary'] = $validated['itinerary'] ? array_map('trim', explode(',', $validated['itinerary'])) : [];
-          // Handle image upload
-    if ($request->hasFile('image')) {
-        $image = $request->file('image');
-
-        // Resize image to 336x240
-        $resizedImage = Image::make($image)->resize(336, 240)->encode($image->getClientOriginalExtension(), 90);
-
-        // Reduce file size under 295 KB
-        $quality = 90;
-        while (strlen($resizedImage) > 295 * 1024 && $quality > 10) {
-            $quality -= 5;
-            $resizedImage = Image::make($image)->resize(336, 240)->encode($image->getClientOriginalExtension(), $quality);
-        }
-
-        // Save the image
-        $imageName = time() . '.' . $image->getClientOriginalExtension();
-        $resizedImage->save(public_path('storage/tour-images/' . $imageName));
-
-        $validated['image_url'] = 'storage/tour-images/' . $imageName;
-    }
-        $tourPackage = \App\Models\TourPackage::create($validated);
-        return redirect()->route('admin.tour-packages.index')->with('success', 'Tour package created successfully.');
-    }
-
+    // public function store(Request $request) { $validated = $request->validate([ 'name' => 'required|string|max:255', 'description' => 'nullable|string', 'price' => 'nullable|numeric', 'duration' => 'nullable|string', 'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048', 'itinerary' => 'nullable|string', ]); $validated['itinerary'] = $validated['itinerary'] ? array_map('trim', explode(',', $validated['itinerary'])) : []; if ($request->hasFile('image')) { $imagePath = $request->file('image')->store('tour-images', 'public'); $validated['image_url'] = 'storage/' . $imagePath;  } $tourPackage = \App\Models\TourPackage::create($validated); return redirect()->route('admin.tour-packages.index')->with('success', 'Tour package created successfully.'); }
     /**
      * Display the specified resource.
      */
+    public function store(Request $request)
+{
+    // Validate other fields first (excluding image)
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'description' => 'nullable|string',
+        'price' => 'nullable|numeric',
+        'duration' => 'nullable|string',
+        'itinerary' => 'nullable|string',
+    ]);
+
+    $warning = null;
+
+    if ($request->hasFile('image')) {
+        $file = $request->file('image');
+
+        // Check size in KB
+        if ($file->getSize() > 295 * 1024) {
+            $warning = "Image size should be less than 295 KB.";
+            return redirect()->back()->withInput()->with('warning', $warning);
+        }
+
+        // Check dimensions
+        [$width, $height] = getimagesize($file);
+        if ($width != 336 && $height != 240) {
+            $warning = "Image must be exactly 336 x 240 pixels.";
+            return redirect()->back()->withInput()->with('warning', $warning);
+        }
+
+        // If no warnings, store image
+        if (!$warning) {
+            $imagePath = $file->store('tour-images', 'public');
+            $validated['image_url'] = 'storage/' . $imagePath;
+        }
+    }
+
+    // Convert itinerary to array
+    $validated['itinerary'] = $validated['itinerary']
+        ? array_map('trim', explode(',', $validated['itinerary']))
+        : [];
+
+    \App\Models\TourPackage::create($validated);
+
+    return redirect()
+        ->route('admin.tour-packages.index')
+        ->with('success', 'Tour package created successfully.')
+        ->with('warning', $warning);
+}
+
     public function show(TourPackage $tourPackage)
     {
         return view('admin.tour-packages.show', compact('tourPackage'));
@@ -89,39 +104,39 @@ class TourPackageController extends Controller
             'description' => 'nullable|string',
             'price' => 'nullable|numeric',
             'duration' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif',
             'itinerary' => 'nullable|string',
         ]);
-        $validated['itinerary'] = $validated['itinerary'] ? array_map('trim', explode(',', $validated['itinerary'])) : [];
-        // Handle image upload
-        if ($request->hasFile('image')) {
-            // $imagePath = $request->file('image')->store('tour-images', 'public');
-            // $validated['image_url'] = 'storage/' . $imagePath; // Save relative path
-            $image = $request->file('image');
-
-            // Resize image to 336x240
-            $resizedImage = Image::make($image)->resize(336, 240)->encode($image->getClientOriginalExtension(), 90);
     
-              // Check file size after resize
-    if (strlen($resizedImage) > 295 * 1024) {
-        return Redirect::back()
-            ->withInput()
-            ->with('error', 'The image file size after resizing should not be greater than 295 KB.');
-    }
-           
-            // Reduce file size under 295 KB
-            $quality = 90;
-            while (strlen($resizedImage) > 295 * 1024 && $quality > 10) {
-                $quality -= 5;
-                $resizedImage = Image::make($image)->resize(336, 240)->encode($image->getClientOriginalExtension(), $quality);
+        $warning = null;
+    
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+    
+            // Check size in KB
+            if ($file->getSize() > 295 * 1024) {
+                $warning = "Image size should be less than 295 KB.";
+                return redirect()->back()->withInput()->with('warning', $warning);
             }
     
-            // Save the image
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $resizedImage->save(public_path('storage/tour-images/' . $imageName));
+            // Check dimensions
+            [$width, $height] = getimagesize($file);
+            if ($width != 336 && $height != 240) {
+                $warning = "Image must be exactly 336 x 240 pixels.";
+                return redirect()->back()->withInput()->with('warning', $warning);
+            }
     
-            $validated['image_url'] = 'storage/tour-images/' . $imageName;
+            // If no warnings, store image
+            if (!$warning) {
+                $imagePath = $file->store('tour-images', 'public');
+                $validated['image_url'] = 'storage/' . $imagePath;
+            }
         }
+    
+        // Convert itinerary to array
+        $validated['itinerary'] = $validated['itinerary']
+            ? array_map('trim', explode(',', $validated['itinerary']))
+            : [];
+    
         $tourPackage->update($validated);
         return redirect()->route('admin.tour-packages.index')->with('success', 'Tour package updated successfully.');
     }

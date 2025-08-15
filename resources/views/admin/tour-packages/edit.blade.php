@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+@if(session('warning'))
+<div class="alert alert-warning">{{ session('warning') }}</div>
+@endif
 <div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-8">

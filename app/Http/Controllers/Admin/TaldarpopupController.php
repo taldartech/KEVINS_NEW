@@ -31,12 +31,13 @@ class TaldarpopupController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
-            'content' => 'required|string',
-            'link' => 'required|string',
+            'title' => 'required|string|max:20',
+            'content' => 'required|string|max:100',
+            'link' => 'required|url|max:255',
             'is_active' => 'required|boolean',
         ]);
         // dd($request->all());
+        
 
         Taldarpopup::create($request->all());
 
@@ -70,9 +71,9 @@ class TaldarpopupController extends Controller
     public function update(Request $request, Taldarpopup $taldarpopup)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
-            'content' => 'required|string',
-            'link' => 'required|string',
+            'title' => 'required|string|max:20',
+            'content' => 'required|string|max:100',
+            'link' => 'required|url|max:255',
             'is_active' => 'required|boolean',
         ]);
 

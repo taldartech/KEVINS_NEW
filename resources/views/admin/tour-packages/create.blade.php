@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+@if(session('warning'))
+<div class="alert alert-warning">{{ session('warning') }}</div>
+@endif
 {{-- <div class="container py-4">
     <h2>Add Tour Package</h2>
     <form action="{{ route('admin.tour-packages.store') }}" method="POST">

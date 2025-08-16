@@ -22,9 +22,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         
-    View::composer('*', function ($view) {
-        $taldarpopup = Taldarpopup::where('is_active', 1)->first();
-        $view->with('taldarpopup', $taldarpopup);
-    });
+        View::composer('*', function ($view) {
+            $activePopup = Taldarpopup::where('is_active', 1)->first();
+            $view->with('activePopup', $activePopup);
+        });
     }
 }

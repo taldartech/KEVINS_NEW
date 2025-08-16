@@ -47,14 +47,14 @@ class TaldarpopupController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show()
-    {
-        $taldarpopup = Taldarpopup::where('is_active', 1)->first();
-        if (!$taldarpopup) {
-            return redirect()->route('admin.taldarpopups.index')->with('error', 'No active taldarpopup found.');
-        }
-        return view('partials.taldar-popup', compact('taldarpopup'));
-    }
+    // public function show()
+    // {
+    //     $taldarpopup = Taldarpopup::where('is_active', 1)->first();
+    //     if (!$taldarpopup) {
+    //         return redirect()->route('admin.taldarpopups.index')->with('error', 'No active taldarpopup found.');
+    //     }
+    //     return view('partials.taldar-popup', compact('taldarpopup'));
+    // }
 
     /**
      * Show the form for editing the specified resource.

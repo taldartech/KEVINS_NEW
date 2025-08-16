@@ -8,7 +8,7 @@
                 <h4 class="mb-0">Update Taldarpopup</h4>
             </div>
             <div class="card-body">
-                <form action="{{ route('admin.taldarpopups.update', $taldarpopup) }}" method="POST">
+                <form action="{{ route('admin.taldarpopups.update', $taldarpopup->id) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="mb-3">
@@ -20,7 +20,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="content" class="form-label">Content</label>
-                        <textarea name="content" id="content" class="form-control"  required>{{ old('content', $taldarpopup->content) }}</textarea>
+                        <textarea name="content" id="content" class="form-control" value="{{ old('content', $taldarpopup->content) }}" required>{{ old('content', $taldarpopup->content) }}</textarea>
                         @error('content')
                         <div class="text-danger small">{{ $message }}</div>
                     @enderror
@@ -34,10 +34,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="is_active" class="form-label">Is Active</label>
-                        <select name="is_active" id="is_active" class="form-control" required>
-                            <option value="1">Active</option>
-                            <option value="0">Inactive</option>
-                        </select>
+                        <select name="is_active" id="is_active" class="form-control" value="{{ old('is_active', $taldarpopup->is_active) }}" required>
+                            <option value="1" {{ old('is_active', $taldarpopup->is_active) == 1 ? 'selected' : '' }}>Active</option>
+                            <option value="0" {{ old('is_active', $taldarpopup->is_active) == 0 ? 'selected' : '' }}>Inactive</option>
+                        </select>   
                     </div>
                     <button type="submit" class="btn btn-primary">Update Taldarpopup</button>
                 </form>

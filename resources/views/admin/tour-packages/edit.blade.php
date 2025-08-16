@@ -35,7 +35,7 @@
       
         <div class="mb-3">
             <label for="image_url" class="form-label">Image URL</label>
-            <input type="file" name="image" id="image" class="form-control" placeholder="Enter image URL" accept="image/*">
+            <input type="file" name="image" id="image" class="form-control" value="{{ $tourPackage->image }}" placeholder="Enter image URL" accept="image/*">
         </div>
         <div class="mb-3">
             <label for="itinerary" class="form-label">Itinerary (comma-separated)</label>

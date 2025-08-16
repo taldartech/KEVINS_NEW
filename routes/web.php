@@ -92,8 +92,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::resource('taldarpopups', App\Http\Controllers\Admin\TaldarpopupController::class);
     Route::get('taldarpopup/show', [App\Http\Controllers\Admin\TaldarpopupController::class, 'show'])
     ->name('admin.taldarpopup.show');
-    Route::put('taldarpopups/{taldarpopup}', [App\Http\Controllers\Admin\TaldarpopupController::class, 'update'])
-    ->name('admin.taldarpopups.update');
+  
     
     Route::resource('rooms', App\Http\Controllers\Admin\RoomController::class);
     Route::resource('tour-packages', App\Http\Controllers\Admin\TourPackageController::class);

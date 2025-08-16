@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-body">
     
-    <form action="{{ route('admin.tour-packages.update', $tourPackage) }}" method="POST">
+    <form action="{{ route('admin.tour-packages.update', $tourPackage) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="mb-3">
@@ -33,9 +33,20 @@
             <input type="text" name="duration" id="duration" class="form-control" value="{{ $tourPackage->duration }}">
         </div>
       
-        <div class="mb-3">
+        {{-- <div class="mb-3">
             <label for="image_url" class="form-label">Image URL</label>
             <input type="file" name="image" id="image" class="form-control" value="{{ $tourPackage->image }}" placeholder="Enter image URL" accept="image/*">
+        </div> --}}
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Image</label>
+            <input type="file" name="image" id="image" class="form-control" accept="image/*">
+            
+            @if($tourPackage->image)
+                <div class="mt-2">
+                    <p>Current Image:</p>
+                    <img src="{{ asset($tourPackage->image) }}" width="120" alt="current image">
+                </div>
+            @endif
         </div>
         <div class="mb-3">
             <label for="itinerary" class="form-label">Itinerary (comma-separated)</label>

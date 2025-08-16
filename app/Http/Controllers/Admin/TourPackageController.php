@@ -111,7 +111,6 @@ class TourPackageController extends Controller
     
         if ($request->hasFile('image')) {
             $file = $request->file('image');
-    
             // Check size in KB
             if ($file->getSize() > 295 * 1024) {
                 $warning = "Image size should be less than 295 KB.";

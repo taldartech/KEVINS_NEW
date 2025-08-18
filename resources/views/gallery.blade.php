@@ -30,6 +30,14 @@
 
     <!-- Ad-popup CSS moved to style.css -->
 </head>
+<style>
+    .gallery-thumb {
+    width: 336px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+    </style>
 
 <body>
     @include('partials.book-now')
@@ -44,6 +52,7 @@
     @include('partials.header')
 
     <!-- Breadcrumb -->
+  
     <section class="section-breadcrumb">
         <div class="rx-breadcrumb-image" style="background: url('assets/img/gallery-banner.jpg') no-repeat center; background-size: cover;">
             <div class="rx-breadcrumb-overlay"></div>
@@ -94,6 +103,25 @@
                         <h4>Our <span>Gallery</span></h4>
                     </div>
                 </div>
+                @forelse($galleries as $gallery)
+                <div class="col-lg-4 col-sm-6 col-12 rx-575-50 mb-24" 
+                     data-aos="fade-up" 
+                     data-aos-duration="1000" 
+                     data-aos-delay="{{ ($loop->index % 3) * 200 }}">
+                    <figure class="rx-gallery-card">
+                        <a class="rx-gallery-img" href="{{ asset($gallery->image_url) }}" data-fancybox="gallery">
+                            <img class="gallery-thumb" src="{{ asset($gallery->image_url) }}" alt="{{ $gallery->caption ?? 'Gallery Image' }}">
+                        </a>
+                        @if($gallery->caption)
+                            <figcaption class="text-center mt-2">{{ $gallery->caption }}</figcaption>
+                        @endif
+                    </figure>
+                </div>
+            @empty
+                <div class="col-12 text-center">
+                    <p class="text-muted">No pictures available in the gallery yet.</p>
+                </div>
+            @endforelse
                 <div class="col-lg-4 col-sm-6 col-12 rx-575-50 mb-24" data-aos="fade-up" data-aos-duration="1000">
                     <figure class="rx-gallery-card">
                         <a class="rx-gallery-img" href="assets/img/Room1.png" data-fancybox="gallery">

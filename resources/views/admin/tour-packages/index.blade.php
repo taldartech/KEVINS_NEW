@@ -16,7 +16,7 @@
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>Sr. No</th>
                 <th>Name</th>
                 <th>Price</th>
                 <th>Duration</th>
@@ -26,7 +26,7 @@
         <tbody>
         @forelse($tourPackages as $tourPackage)
             <tr>
-                <td>{{ $tourPackage->id }}</td>
+                <td>{{ $loop->iteration }}</td>
                 <td>{{ $tourPackage->name }}</td>
                 <td>{{ $tourPackage->price }}</td>
                 <td>{{ $tourPackage->duration }}</td>

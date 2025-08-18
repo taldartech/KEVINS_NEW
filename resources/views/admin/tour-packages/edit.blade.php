@@ -47,6 +47,7 @@
                     <img src="{{ asset($tourPackage->image) }}" width="120" alt="current image">
                 </div>
             @endif
+            <small class="text-muted">Image size should be less than 295kb and dimension should be 336x240 pixel</small>
         </div>
         <div class="mb-3">
             <label for="itinerary" class="form-label">Itinerary (comma-separated)</label>

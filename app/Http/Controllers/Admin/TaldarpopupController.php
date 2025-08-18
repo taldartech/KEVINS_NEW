@@ -32,7 +32,7 @@ class TaldarpopupController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:20',
-            'content' => 'required|string|max:100',
+            'content' => 'required|string|max:200',
             'link' => 'required|url|max:255',
             'is_active' => 'required|boolean',
         ]);
@@ -72,7 +72,7 @@ class TaldarpopupController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:20',
-            'content' => 'required|string|max:100',
+            'content' => 'required|string|max:200',
             'link' => 'required|url|max:255',
             'is_active' => 'required|boolean',
         ]);

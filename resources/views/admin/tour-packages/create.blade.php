@@ -71,6 +71,7 @@
                         <div class="mb-3">
                             <label for="image_url" class="form-label">Image URL</label>
                             <input type="file" name="image" id="image" class="form-control" placeholder="Enter image URL" accept="image/*">
+                            <small class="text-muted">Image size should be less than 295kb and dimension should be 336x240 pixel</small>
                         </div>
 
                         <div class="mb-3">

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Models\TourPackage;
+use App\Models\Gallery;
 
 Route::get('/', function () {
     
@@ -20,7 +21,8 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/gallery', function () {
-    return view('gallery');
+    $galleries = Gallery::orderByDesc('id')->get();
+    return view('gallery', compact('galleries'));
 })->name('gallery');
 
 Route::get('/rooms', function () {
@@ -98,6 +100,8 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::resource('tour-packages', App\Http\Controllers\Admin\TourPackageController::class);
     Route::get('tour-packages/show', [App\Http\Controllers\Admin\TourPackageController::class, 'show'])
     ->name('admin.tour-packages.show');
+    Route::resource('galleries', App\Http\Controllers\Admin\GalleryController::class);
+
 });
 
 require __DIR__.'/auth.php';

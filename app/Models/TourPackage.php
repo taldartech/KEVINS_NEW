@@ -19,6 +19,7 @@ class TourPackage extends Model
     protected $casts = [
         'itinerary' => 'array',
     ];
+    protected $dates = ['deleted_at'];
 
    
 }

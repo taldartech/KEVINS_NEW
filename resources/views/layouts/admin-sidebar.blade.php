@@ -106,9 +106,15 @@
                         Blog Section
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="#" @click.prevent="tab = 'reviews'" :class="tab === 'reviews' ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700'" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.036 6.29a1 1 0 00.95.69h6.631c.969 0 1.371 1.24.588 1.81l-5.37 3.905a1 1 0 00-.364 1.118l2.036 6.29c.3.921-.755 1.688-1.54 1.118l-5.37-3.905a1 1 0 00-1.175 0l-5.37 3.905c-.784.57-1.838-.197-1.54-1.118l2.036-6.29a1 1 0 00-.364-1.118L2.293 11.717c-.783-.57-.38-1.81.588-1.81h6.631a1 1 0 00.95-.69l2.036-6.29z" /></svg>
+                        Reviews
+                    </a>
+                </li> --}}
+                <li>
+                    <a href="{{ route('admin.reviews.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.reviews.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10V6a2 2 0 012-2h12a2 2 0 012 2v4M4 10v10a2 2 0 002 2h12a2 2 0 002-2V10M4 10h16" /></svg>
                         Reviews
                     </a>
                 </li>

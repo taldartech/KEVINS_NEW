@@ -13,7 +13,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        //
+        $reviews = Review::orderByDesc('id')->get();
+        return view('admin.reviews.index', compact('reviews'));
     }
 
     /**
@@ -21,7 +22,7 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.reviews.create');
     }
 
     /**
@@ -29,7 +30,19 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'author' => 'required|string|max:255',
+            'content' => 'required|string',
+            'rating' => 'required|numeric',
+            'approved' => 'required|boolean',
+            'show_on_index' => 'required|boolean',
+        ]);
+    
+        Review::create($validated);
+    
+        return redirect()
+            ->route('admin.reviews.index')
+            ->with('success', 'Review created successfully.');
     }
 
     /**
@@ -37,7 +50,7 @@ class ReviewController extends Controller
      */
     public function show(Review $review)
     {
-        //
+        return view('admin.reviews.show', compact('review'));
     }
 
     /**
@@ -45,7 +58,7 @@ class ReviewController extends Controller
      */
     public function edit(Review $review)
     {
-        //
+        return view('admin.reviews.edit', compact('review'));
     }
 
     /**
@@ -53,7 +66,19 @@ class ReviewController extends Controller
      */
     public function update(Request $request, Review $review)
     {
-        //
+        $validated = $request->validate([
+            'author' => 'required|string|max:255',
+            'content' => 'required|string',
+            'rating' => 'required|numeric',
+            'approved' => 'required|boolean',
+            'show_on_index' => 'required|boolean',
+        ]);
+    
+        $review->update($validated);
+    
+        return redirect()
+            ->route('admin.reviews.index')
+            ->with('success', 'Review updated successfully.');
     }
 
     /**
@@ -61,6 +86,7 @@ class ReviewController extends Controller
      */
     public function destroy(Review $review)
     {
-        //
+        $review->delete();
+        return redirect()->route('admin.reviews.index')->with('success', 'Review deleted successfully.');
     }
 }

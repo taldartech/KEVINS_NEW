@@ -14,4 +14,6 @@ class Gallery extends Model
         'category',
     ];
 
+    protected $dates = ['deleted_at'];
+
 }

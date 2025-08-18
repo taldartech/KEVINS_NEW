@@ -5,11 +5,13 @@ use Illuminate\Support\Facades\Route;
 use App\Models\TourPackage;
 use App\Models\Gallery;
 use App\Models\Room;
+use App\Models\Review;
 
 Route::get('/', function () {
     $rooms = Room::orderByDesc('id')->get();
+    $reviews = Review::orderByDesc('id')->get();
     
-    return view('index', compact('rooms'));
+    return view('index', compact('rooms', 'reviews'));
 })->name('home');
 
 Route::get('/dashboard', function () {
@@ -112,6 +114,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('tour-packages/show', [App\Http\Controllers\Admin\TourPackageController::class, 'show'])
     ->name('admin.tour-packages.show');
     Route::resource('galleries', App\Http\Controllers\Admin\GalleryController::class);
+    Route::resource('reviews', App\Http\Controllers\Admin\ReviewController::class);
 
 });
 

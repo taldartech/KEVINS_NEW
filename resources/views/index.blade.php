@@ -849,6 +849,38 @@ ensuring your Andaman story begins in the best possible way.
                     </div>
                 </div>
             </div>
+            
+            @forelse ($reviews as $review)
+            @if($review->show_on_index)
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="review-card p-4 h-100 shadow-sm bg-white rounded">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="{{ asset('assets/img/avatar1.png') }}" alt="Guest" 
+                             class="rounded-circle me-3" width="48" height="48">
+                        <div>
+                            <h6 class="mb-0">{{ $review->author }}</h6>
+                            <div class="text-warning small">
+                                {{-- Display stars based on rating --}}
+                                @for ($i = 1; $i <= 5; $i++)
+                                    @if ($i <= $review->rating)
+                                    ★
+                                    @else
+                                    ☆
+                                    @endif
+                                @endfor
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">"{{ $review->content }}"</p>
+                </div>
+            </div>
+            @endif
+        @empty
+            <div class="col-12 text-center">
+                <p class="text-muted">No reviews available at the moment.</p>
+            </div>
+        @endforelse
+
             <div class="row justify-content-center">
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="review-card p-4 h-100 shadow-sm bg-white rounded">

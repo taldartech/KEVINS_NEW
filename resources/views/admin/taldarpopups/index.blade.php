@@ -11,11 +11,11 @@
 
     <div class="container mt-4">
         <div class="mb-3 text-end">
-            <a href="{{ route('admin.taldarpopups.create') }}" class="btn btn-primary">Add Taldarpopup</a>
+            <a href="{{ route('admin.taldarpopups.create') }}" class="btn btn-primary">Add pop-up</a>
         </div>
         <div class="card">
             <div class="card-header bg-primary text-white">
-                <h4 class="mb-0">Taldarpopups</h4>
+                <h4 class="mb-0">pop-ups</h4>
                
             </div>
            

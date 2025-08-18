@@ -5,7 +5,7 @@
     <div class="container mt-4">
         <div class="card">
             <div class="card-header bg-primary text-white">
-                <h4 class="mb-0">Update Taldarpopup</h4>
+                <h4 class="mb-0">Update pop-up</h4>
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.taldarpopups.update', $taldarpopup->id) }}" method="POST">

@@ -839,7 +839,7 @@ ensuring your Andaman story begins in the best possible way.
         </div>
     </section>
 
-    <!-- Reviews Section -->
+    {{-- <!-- Reviews Section -->
     <section class="section-reviews padding-tb-50" style="background:#f8f9fa;">
         <div class="container">
             <div class="row mb-4">
@@ -861,7 +861,7 @@ ensuring your Andaman story begins in the best possible way.
                             <h6 class="mb-0">{{ $review->author }}</h6>
                             <div class="text-warning small">
                                 {{-- Display stars based on rating --}}
-                                @for ($i = 1; $i <= 5; $i++)
+                                {{-- @for ($i = 1; $i <= 5; $i++)
                                     @if ($i <= $review->rating)
                                     ★
                                     @else
@@ -929,8 +929,99 @@ ensuring your Andaman story begins in the best possible way.
         <style>
             .review-card { transition: box-shadow 0.2s; }
             .review-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
-        </style>
-    </section>
+        </style> --}}
+    {{-- </section>  --}}
+    <!-- Reviews Section -->
+<section class="section-reviews padding-tb-50" style="background:#f8f9fa;">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <div class="rx-banner text-center rx-banner-effects">
+                    <h4>What Our <span>Guests Say</span></h4>
+                </div>
+            </div>
+        </div>
+
+        @php
+            $visibleReviews = $reviews->where('show_on_index', true);
+        @endphp
+
+        {{-- Case 1: If 3 or fewer reviews, show as static grid --}}
+        @if($visibleReviews->count() <= 3)
+            <div class="row">
+                @foreach($visibleReviews as $review)
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="review-card p-4 h-100 shadow-sm bg-white rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="{{ asset('assets/img/avatar1.png') }}" 
+                                 alt="Guest" class="rounded-circle me-3" width="48" height="48">
+                            <div>
+                                <h6 class="mb-0">{{ $review->author }}</h6>
+                                <div class="text-warning small">
+                                    @for ($i = 1; $i <= 5; $i++)
+                                        @if ($i <= $review->rating) ★ @else ☆ @endif
+                                    @endfor
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"{{ $review->content }}"</p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        @else
+        {{-- Case 2: More than 3 reviews -> show carousel --}}
+            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach($visibleReviews->chunk(3) as $chunkIndex => $chunk)
+                        <div class="carousel-item {{ $chunkIndex === 0 ? 'active' : '' }}">
+                            <div class="row">
+                                @foreach($chunk as $review)
+                                <div class="col-md-4 col-sm-6 mb-4">
+                                    <div class="review-card p-4 h-100 shadow-sm bg-white rounded">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="{{ asset('assets/img/avatar1.png') }}" 
+                                                 alt="Guest" class="rounded-circle me-3" width="48" height="48">
+                                            <div>
+                                                <h6 class="mb-0">{{ $review->author }}</h6>
+                                                <div class="text-warning small">
+                                                    @for ($i = 1; $i <= 5; $i++)
+                                                        @if ($i <= $review->rating) ★ @else ☆ @endif
+                                                    @endfor
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">"{{ $review->content }}"</p>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+
+                <!-- Indicators only, no arrows -->
+                <div class="carousel-indicators mt-3">
+                    @foreach($visibleReviews->chunk(3) as $chunkIndex => $chunk)
+                        <button type="button" data-bs-target="#reviewsCarousel" 
+                                data-bs-slide-to="{{ $chunkIndex }}" 
+                                class="{{ $chunkIndex === 0 ? 'active' : '' }}" 
+                                aria-current="{{ $chunkIndex === 0 ? 'true' : 'false' }}"></button>
+                    @endforeach
+                </div>
+            </div>
+        @endif
+    </div>
+
+    <style>
+        .review-card { transition: box-shadow 0.2s; }
+        .review-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+        .carousel-indicators [data-bs-target] {
+            background-color: #333;
+        }
+    </style>
+</section>
+
 
 
 

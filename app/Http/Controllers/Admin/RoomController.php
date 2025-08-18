@@ -34,14 +34,48 @@ class RoomController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'nullable|numeric',
-            'image_url' => 'nullable|string',
             'capacity' => 'nullable|integer',
             'amenities' => 'nullable|string',
         ]);
-        $validated['amenities'] = $validated['amenities'] ? array_map('trim', explode(',', $validated['amenities'])) : [];
-        $room = \App\Models\Room::create($validated);
-        return redirect()->route('admin.rooms.index')->with('success', 'Room created successfully.');
+    
+        $warning = null;
+    
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+    
+            // ✅ Check size in KB
+            if ($file->getSize() > 295 * 1024) {
+                $warning = "Image size should be less than 295 KB.";
+                return redirect()->back()->withInput()->with('warning', $warning);
+            }
+    
+            // ✅ Check dimensions (must be exactly 336x240)
+            // [$width, $height] = getimagesize($file);
+            // if ($width != 336 || $height != 240) {
+            //     $warning = "Image must be exactly 336 x 240 pixels.";
+            //     return redirect()->back()->withInput()->with('warning', $warning);
+            // }
+    
+            // ✅ If no warnings, store image
+            if (!$warning) {
+                $imagePath = $file->store('rooms', 'public');
+                $validated['image_url'] = 'storage/' . $imagePath;
+            }
+        }
+    
+        // ✅ Convert amenities string → array
+        $validated['amenities'] = $validated['amenities'] 
+            ? array_map('trim', explode(',', $validated['amenities'])) 
+            : [];
+    
+        \App\Models\Room::create($validated);
+    
+        return redirect()
+            ->route('admin.rooms.index')
+            ->with('success', 'Room created successfully.')
+            ->with('warning', $warning);
     }
+    
 
     /**
      * Display the specified resource.
@@ -68,13 +102,41 @@ class RoomController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'nullable|numeric',
-            'image_url' => 'nullable|string',
+           
             'capacity' => 'nullable|integer',
             'amenities' => 'nullable|string',
         ]);
-        $validated['amenities'] = $validated['amenities'] ? array_map('trim', explode(',', $validated['amenities'])) : [];
+        $warning = null;
+    
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+    
+            // ✅ Check size in KB
+            if ($file->getSize() > 295 * 1024) {
+                $warning = "Image size should be less than 295 KB.";
+                return redirect()->back()->withInput()->with('warning', $warning);
+            }
+    
+            // ✅ Check dimensions (must be exactly 336x240)
+            // [$width, $height] = getimagesize($file);
+            // if ($width != 336 || $height != 240) {
+            //     $warning = "Image must be exactly 336 x 240 pixels.";
+            //     return redirect()->back()->withInput()->with('warning', $warning);
+            // }
+    
+            // ✅ If no warnings, store image
+            if (!$warning) {
+                $imagePath = $file->store('rooms', 'public');
+                $validated['image_url'] = 'storage/' . $imagePath;
+            }
+        }
+    
+        // ✅ Convert amenities string → array
+        $validated['amenities'] = $validated['amenities'] 
+            ? array_map('trim', explode(',', $validated['amenities'])) 
+            : [];
         $room->update($validated);
-        return redirect()->route('admin.rooms.index')->with('success', 'Room updated successfully.');
+        return redirect()->route('admin.rooms.index')->with('success', 'Room updated successfully.')->with('warning', $warning);
     }
 
     /**

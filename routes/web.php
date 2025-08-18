@@ -4,15 +4,23 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Models\TourPackage;
 use App\Models\Gallery;
+use App\Models\Room;
 
 Route::get('/', function () {
+    $rooms = Room::orderByDesc('id')->get();
     
-    return view('index');
+    return view('index', compact('rooms'));
 })->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/rooms-details/{id}', function ($id) {
+    $rooms = Room::orderByDesc('id')->get();
+    $room = Room::findOrFail($id);
+    return view('rooms-details', compact('room', 'rooms'));
+})->name('rooms-details');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -26,7 +34,8 @@ Route::get('/gallery', function () {
 })->name('gallery');
 
 Route::get('/rooms', function () {
-    return view('rooms');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('rooms', compact('rooms'));
 })->name('rooms');
 
 Route::get('/restaurants', function () {
@@ -63,11 +72,13 @@ Route::get('/historical-places', function () {
 })->name('historical-places');
 
 Route::get('/deluxe-room', function () {
-    return view('deluxe-room');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('deluxe-room', compact('rooms'));
 })->name('deluxe-room');
 
 Route::get('/standard-room', function (){
-    return view('standard-room');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('standard-room', compact('rooms'));
 })->name('standard-room');
 
 Route::get('/terms', function () {

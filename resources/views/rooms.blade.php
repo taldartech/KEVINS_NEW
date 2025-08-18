@@ -31,6 +31,14 @@
     
 
 </head>
+<style>
+    .room-image {
+    width: 634px;
+    height: 400px;
+    object-fit: cover; /* crop & keep aspect ratio */
+    border-radius: 8px; /* optional for styling */
+}
+    </style>
 
 <body>
     @include('partials.book-now')
@@ -103,7 +111,68 @@
                         <p>Enhance your experience of Sri Vijaya Puram(Port Blair)'s picturesque coastline and rich history by staying at Kevins. Our bed and breakfast features six elegantly furnished rooms in Deluxe and Standard categories. Each room has modern amenities, including air conditioning, a television, and 24-hour hot and cold-water service. Designed for ultimate comfort, our rooms make you feel right at home. Enjoy a complimentary welcome drink and exemplary room service, ensuring that your stay is both relaxing and memorable. At Kevins, the timeless charm of Sri Vijaya Puram(Port Blair) past blends seamlessly with modern hospitality, catering to both business travelers and those seeking leisure.</p>
                     </div>
                 </div>
+                @foreach ($rooms as $index => $room)
+                <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" @if($index > 0) data-aos-delay="{{ $index * 200 }}" @endif>
+                    <div class="rx-rooms-box">
+                        <div class="rx-rooms-img">
+                            <img class="room-image" src="{{ asset($room->image_url) }}" alt="{{ $room->name }}">
+                            <div class="inner-contact">
+                                <h4>{{ $room->name }}</h4>
+                            </div>
+                        </div>
+                        <div class="rx-rooms-back-side">
+                            <img class="room-image" src="{{ asset($room->image_url) }}" alt="{{ $room->name }}">
+                            <div class="inner-back-side">
+                                <div class="sub-inner-contact">
+                                    <h5>{{ $room->name }}</h5>
+                                    <ul>
+                                        @foreach (array_slice($room->amenities, 0, 4) as $amenity)
+                                            <li>{{ $amenity }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                <div class="last-contact">
+                                    {{-- @if($room->booking_url) --}}
+                                        <a href="{{ $room->booking_url }}" class="inner-button" target="_blank">Book Now</a>
+                                    {{-- @endif --}}
+                                    <a href="{{ route('rooms-details', $room->id) }}" class="inner-button">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
+                <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" @if($index > 0) data-aos-delay="{{ $index * 200 + 100 }}" @endif>
+                    <div class="rx-amenities-contact">
+                        <div class="inner-banner">
+                            <h4>{{ $room->name }}</h4>
+                        </div>
+                        <p>{{ $room->description }}</p>
+                        <div class="rx-about-inner-box">
+                            <h5 class="mb-3">Room Features & Amenities:</h5>
+                            <div class="row mb-minus-24">
+                                <div class="col-sm-6 col-12 mb-24">
+                                    <ul>
+                                        @foreach (array_slice($room->amenities, 0, ceil(count($room->amenities)/2)) as $amenity)
+                                            <li>✓ {{ $amenity }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-12 mb-24">
+                                    <ul>
+                                        @foreach (array_slice($room->amenities, ceil(count($room->amenities)/2)) as $amenity)
+                                            <li>✓ {{ $amenity }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+         
                 <!-- Standard Room -->
                 <div class="col-lg-6 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000">
                     <div class="rx-rooms-box">

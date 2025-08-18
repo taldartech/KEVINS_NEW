@@ -1,9 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-4">
-    <h2>Edit Room</h2>
-    <form action="{{ route('admin.rooms.update', $room) }}" method="POST">
+@if(session('warning'))
+<div class="alert alert-warning">
+    {{ session('warning') }}
+</div>
+@endif
+@if(session('success'))
+<div class="alert alert-success">
+    {{ session('success') }}
+</div>
+@endif
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+
+    <h4>Edit Room</h4>
+    </div>
+    <div class="card-body">
+    <form action="{{ route('admin.rooms.update', $room) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="mb-3">
@@ -20,7 +35,7 @@
         </div>
         <div class="mb-3">
             <label for="image_url" class="form-label">Image URL</label>
-            <input type="text" name="image_url" id="image_url" class="form-control" value="{{ $room->image_url }}">
+            <input type="file" name="image" id="image" class="form-control" value="{{ $room->image_url }}">
         </div>
         <div class="mb-3">
             <label for="capacity" class="form-label">Capacity</label>
@@ -33,5 +48,7 @@
         <button type="submit" class="btn btn-success">Update Room</button>
         <a href="{{ route('admin.rooms.index') }}" class="btn btn-secondary">Cancel</a>
     </form>
+    </div>
+    </div>
 </div>
 @endsection

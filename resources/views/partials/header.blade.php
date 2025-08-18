@@ -27,6 +27,9 @@
                                         <ul class="rx-dropdown-menu">
                                             <li><a class="dropdown-item" href="{{ route ('deluxe-room')}}">Deluxe Room</a></li>
                                             <li><a class="dropdown-item" href="{{ route ('standard-room')}}">Standard Room</a></li>
+                                            @foreach ($rooms as $room)
+                                                <li><a class="dropdown-item" href="{{ route ('rooms-details', $room->id)}}">{{ $room->name }}</a></li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     <li class="nav-item rx-dropdown">

@@ -38,7 +38,7 @@
                             <option value="0">Inactive</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Create Taldarpopup</button>
+                    <button type="submit" class="btn btn-primary">Create pop-up</button>
                 </form>
             </div>
         </div>

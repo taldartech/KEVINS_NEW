@@ -39,7 +39,7 @@
                             <option value="0" {{ old('is_active', $taldarpopup->is_active) == 0 ? 'selected' : '' }}>Inactive</option>
                         </select>   
                     </div>
-                    <button type="submit" class="btn btn-primary">Update Taldarpopup</button>
+                    <button type="submit" class="btn btn-primary">Update pop-up</button>
                 </form>
             </div>
         </div>

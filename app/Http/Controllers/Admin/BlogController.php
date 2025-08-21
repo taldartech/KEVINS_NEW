@@ -32,15 +32,16 @@ class BlogController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
-            'content' => 'required',
-            
+            'title' => 'required|string|max:10',
+            'heading' => 'required|string|max:50',   // max 50 characters
+            'content' => 'required|string|max:500', // max 500 characters
             'published_at' => 'required|date',
             'author' => 'required',
         ]);
 
         $blog = new Blog();
         $blog->title = $request->title;
+        $blog->heading = $request->heading;
         $blog->content = $request->content;
         $blog->published_at = $request->published_at;
         $blog->author = $request->author;
@@ -93,14 +94,15 @@ class BlogController extends Controller
     public function update(Request $request, Blog $blog)
     {
             $request->validate([
-            'title' => 'required',
-            'content' => 'required',
-            
+            'title' => 'required|string|max:10',
+            'heading' => 'required|string|max:50',   // max 50 characters
+            'content' => 'required|string|max:500', // max 500 characters
             'published_at' => 'required|date',
             'author' => 'required',
         ]);
 
         $blog->title = $request->title;
+        $blog->heading = $request->heading;
         $blog->content = $request->content;
         $blog->published_at = $request->published_at;
         $blog->author = $request->author;

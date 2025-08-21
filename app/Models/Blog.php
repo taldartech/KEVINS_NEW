@@ -10,6 +10,7 @@ class Blog extends Model
     use SoftDeletes;
     protected $fillable = [
         'title',
+        'heading',
         'content',
         'image',
         'published_at',
@@ -18,4 +19,5 @@ class Blog extends Model
     protected $casts = [
         'published_at' => 'datetime',
     ];
+   
 }

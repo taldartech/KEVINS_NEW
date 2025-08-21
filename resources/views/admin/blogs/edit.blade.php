@@ -21,18 +21,43 @@
                         <div class="mb-3">
                             <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
                             <input type="text" name="title" id="title" class="form-control" placeholder="Enter Title" required value="{{ $blog->title }}">
+                           @error('title')
+                           <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        </div>
+                        <!-- Heading -->
+                        <div class="mb-3">
+                            <label for="heading" class="form-label">Heading <span class="text-danger">*</span></label>
+                            <input type="text" name="heading" id="heading" class="form-control" placeholder="Enter Heading" required value="{{ $blog->heading }}">
+                            @error('heading')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
                         </div>
 
                         <!-- Content -->
                         <div class="mb-3">
                             <label for="content" class="form-label">Content <span class="text-danger">*</span></label>
                             <textarea name="content" id="content" class="form-control" placeholder="Enter Blog Content" rows="5" required>{{ $blog->content }}</textarea>
+                            @error('content')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
                         </div>
 
                         <!-- Author -->
                         <div class="mb-3">
                             <label for="author" class="form-label">Author <span class="text-danger">*</span></label>
                             <input type="text" name="author" id="author" class="form-control" placeholder="Enter Author Name" required value="{{ $blog->author }}">
+                            @error('author')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
                         </div>
 
                         <!-- Published Date -->
@@ -48,6 +73,11 @@
                         <div class="mb-3">
                             <label for="image" class="form-label">Upload Image <span class="text-danger">*</span></label>
                             <input type="file" name="image" id="image" class="form-control" accept="image/*" required>
+                            @error('image')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
                             <small class="text-muted">Image size should be less than 295kb</small>
                             <img src="{{ asset($blog->image_url) }}" alt="Blog Image" class="mt-2" width="100">
                         </div>

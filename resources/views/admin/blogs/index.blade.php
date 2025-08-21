@@ -16,7 +16,7 @@
             <tr>
                 <th>Sr. No</th>
                 <th>Title</th>
-                <th>Content</th>
+                <th>Heading</th>
                 <th>Image</th>
                 <th>Published At</th>
                 <th>Author</th>
@@ -28,7 +28,7 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $blog->title }}</td>
-                <td>{{ Str::limit($blog->content, 50) }}</td>
+                <td>{{ Str::limit($blog->heading, 50) }}</td>
                 <td>
                     @if($blog->image_url)
                         <img src="{{ asset($blog->image_url) }}" alt="Blog Image" class="img-fluid" width="100">

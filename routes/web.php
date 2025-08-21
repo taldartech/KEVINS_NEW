@@ -64,10 +64,11 @@ Route::get('/contact', function () {
     return view('contact', compact('rooms'));
 })->name('contact');
 
-Route::get('/blog-details', function () {
+Route::get('/blog-details/{id}', function ($id) {
     $blogs = Blog::orderByDesc('id')->get();
+    $blog = Blog::findOrFail($id);
     $rooms = Room::orderByDesc('id')->get();
-    return view('blog-details', compact('blogs', 'rooms'));
+    return view('blog-details', compact('blogs', 'blog', 'rooms'));
 })->name('blog-details');
 
 Route::get('/about', function () {

@@ -72,7 +72,7 @@
                         <!-- Image -->
                         <div class="mb-3">
                             <label for="image" class="form-label">Upload Image <span class="text-danger">*</span></label>
-                            <input type="file" name="image" id="image" class="form-control" accept="image/*" required>
+                            <input type="file" name="image" id="image" class="form-control" accept="image/*" >
                             @error('image')
                             <div class="invalid-feedback">
                                 {{ $message }}

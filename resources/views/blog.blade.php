@@ -117,7 +117,7 @@
             <div class="rx-blog-contact">
                 <span>{{ \Carbon\Carbon::parse($blog->published_at)->format('F d, Y') }} - {{ $blog->title }}</span>
                 <h4>
-                    <a href="{{ route('blog-details') }}">
+                    <a href="{{ route('blog-details', $blog->id) }}">
                         {{ Str::limit($blog->content, 60) }}
                     </a>
                 </h4>
@@ -131,7 +131,7 @@
                             </div>
                             <div class="rx-blog-contact">
                                 <span>June 28,2024 - Restaurant</span>
-                                <h4><a href="{{ route('blog-details') }}">Best way to solve business deal issue in market.</a></h4>
+                                <h4><a href="{{ route('blog-details', $blog->id) }}">Best way to solve business deal issue in market.</a></h4>
                             </div>
                         </div>
                         <div class="rx-blog-card">
@@ -140,7 +140,7 @@
                             </div>
                             <div class="rx-blog-contact">
                                 <span>June 30,2021 - Gym</span>
-                                <h4><a href="{{ route('blog-details') }}">Marketing Guide 5 steps to Success.</a></h4>
+                                <h4><a href="{{ route('blog-details', $blog->id ) }}">Marketing Guide 5 steps to Success.</a></h4>
                             </div>
                         </div>
                         <div class="rx-blog-card">
@@ -149,7 +149,7 @@
                             </div>
                             <div class="rx-blog-contact">
                                 <span>June 16,2021 - Spa</span>
-                                <h4><a href="{{ route('blog-details') }}">Best Way to solve Business deal.</a></h4>
+                                <h4><a href="{{ route('blog-details', $blog->id) }}">Best Way to solve Business deal.</a></h4>
                             </div>
                         </div>
                         <div class="rx-blog-card">
@@ -158,7 +158,7 @@
                             </div>
                             <div class="rx-blog-contact">
                                 <span>June 10,2025 - Golf</span>
-                                <h4><a href="{{ route('blog-details') }}">customer service stats know in 2019.</a></h4>
+                                <h4><a href="{{ route('blog-details', $blog->id) }}">customer service stats know in 2019.</a></h4>
                             </div>
                         </div>
                     </div>

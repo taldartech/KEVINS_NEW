@@ -6,6 +6,7 @@ use App\Models\TourPackage;
 use App\Models\Gallery;
 use App\Models\Room;
 use App\Models\Review;
+use App\Models\Blog;
 
 Route::get('/', function () {
     $rooms = Room::orderByDesc('id')->get();
@@ -31,8 +32,9 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/gallery', function () {
+    $rooms = Room::orderByDesc('id')->get();
     $galleries = Gallery::orderByDesc('id')->get();
-    return view('gallery', compact('galleries'));
+    return view('gallery', compact('galleries', 'rooms'));
 })->name('gallery');
 
 Route::get('/rooms', function () {
@@ -41,36 +43,46 @@ Route::get('/rooms', function () {
 })->name('rooms');
 
 Route::get('/restaurants', function () {
-    return view('restaurants');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('restaurants', compact('rooms'));
 })->name('restaurants');
 
 Route::get('/tour-packages', function () {
     $tourPackages = TourPackage::orderByDesc('id')->get();
-    return view('tour-packages', compact('tourPackages'));
+    $rooms = Room::orderByDesc('id')->get();
+    return view('tour-packages', compact('tourPackages', 'rooms'));
 })->name('tour-packages');
 
 Route::get('/blog', function () {
-    return view('blog');
+    $blogs = Blog::orderByDesc('id')->get();
+    $rooms = Room::orderByDesc('id')->get();
+    return view('blog', compact('blogs', 'rooms'));
 })->name('blog');
 
 Route::get('/contact', function () {
-    return view('contact');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('contact', compact('rooms'));
 })->name('contact');
 
 Route::get('/blog-details', function () {
-    return view('blog-details');
+    $blogs = Blog::orderByDesc('id')->get();
+    $rooms = Room::orderByDesc('id')->get();
+    return view('blog-details', compact('blogs', 'rooms'));
 })->name('blog-details');
 
 Route::get('/about', function () {
-    return view('about');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('about', compact('rooms'));
 })->name('about');
 
 Route::get('/nearby-attractions', function () {
-    return view('nearby-attractions');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('nearby-attractions', compact('rooms'));
 })->name('nearby-attractions');
 
 Route::get('/historical-places', function () {
-    return view('historical-places');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('historical-places', compact('rooms'));
 })->name('historical-places');
 
 Route::get('/deluxe-room', function () {
@@ -84,23 +96,28 @@ Route::get('/standard-room', function (){
 })->name('standard-room');
 
 Route::get('/terms', function () {
-    return view('terms');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('terms', compact('rooms'));
 })->name('terms');
 
 Route::get('/refund-policy', function () {
-    return view('refund-policy');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('refund-policy', compact('rooms'));
 })->name('refund-policy');
 
 Route::get('/faq', function () {
-    return view('faq');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('faq', compact('rooms'));
 })->name('faq');
 
 Route::get('/privacy-policy', function () {
-    return view('privacy-policy');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('privacy-policy', compact('rooms'));
 })->name('privacy-policy');
 
 Route::get('/disclaimer', function () {
-    return view('disclaimer');
+    $rooms = Room::orderByDesc('id')->get();
+    return view('disclaimer', compact('rooms'));
 })->name('disclaimer');
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
@@ -115,6 +132,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     ->name('admin.tour-packages.show');
     Route::resource('galleries', App\Http\Controllers\Admin\GalleryController::class);
     Route::resource('reviews', App\Http\Controllers\Admin\ReviewController::class);
+    Route::resource('blogs', App\Http\Controllers\Admin\BlogController::class);
 
 });
 

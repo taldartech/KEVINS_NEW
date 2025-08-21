@@ -30,6 +30,15 @@
 
 </head>
 
+<style>
+    .fixed-blog-img img {
+        width: 396.6px;
+        height: 270.6px;
+        object-fit: cover; /* keeps aspect ratio without distortion */
+        border-radius: 8px; /* optional for rounded corners */
+    }
+</style>
+
 <body>
     @include('partials.book-now')
     @include('partials.taldar-popup')
@@ -96,6 +105,26 @@
                 </div>
                 <div class="col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="owl-carousel rx-blog-slider">
+                        @foreach($blogs as $blog)
+        <div class="rx-blog-card">
+            <div class="rx-blog-img fixed-blog-img">
+                @if($blog->image_url)
+                    <img src="{{ asset($blog->image_url) }}" alt="{{ $blog->title }}">
+                @else
+                    <img src="{{ asset('assets/img/default-blog.jpg') }}" alt="default">
+                @endif
+            </div>
+            <div class="rx-blog-contact">
+                <span>{{ \Carbon\Carbon::parse($blog->published_at)->format('F d, Y') }} - {{ $blog->title }}</span>
+                <h4>
+                    <a href="{{ route('blog-details') }}">
+                        {{ Str::limit($blog->content, 60) }}
+                    </a>
+                </h4>
+            </div>
+        </div>
+    @endforeach
+
                         <div class="rx-blog-card">
                             <div class="rx-blog-img">
                                 <img src="{{ asset('assets/img/blog/1.jpg') }}" alt="blog-1">
@@ -309,6 +338,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- Plugins -->
     <script src="{{ asset('assets/js/vendor/bootstrap.bundle.min.js') }}"></script>

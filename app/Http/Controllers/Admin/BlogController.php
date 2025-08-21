@@ -13,7 +13,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $blogs = Blog::orderByDesc('id')->get();
+        return view('admin.blogs.index', compact('blogs'));
     }
 
     /**
@@ -21,7 +22,8 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        $blogs = Blog::orderByDesc('id')->get();
+        return view('admin.blogs.create', compact('blogs'));
     }
 
     /**
@@ -29,7 +31,42 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            
+            'published_at' => 'required|date',
+            'author' => 'required',
+        ]);
+
+        $blog = new Blog();
+        $blog->title = $request->title;
+        $blog->content = $request->content;
+        $blog->published_at = $request->published_at;
+        $blog->author = $request->author;
+
+        $warning = null;
+
+    if ($request->hasFile('image')) {
+        $file = $request->file('image');
+
+        // Check size in KB
+        if ($file->getSize() > 295 * 1024) {
+            $warning = "Image size should be less than 295 KB.";
+            return redirect()->back()->withInput()->with('warning', $warning);
+        }
+
+        // Check dimensions
+      
+        // If no warnings, store image
+        if (!$warning) {
+            $imagePath = $file->store('blogs', 'public');
+            $blog->image_url = 'storage/' . $imagePath;
+        }
+    }
+        $blog->save();
+
+        return redirect()->route('admin.blogs.index')->with('success', 'Blog created successfully')->with('warning', $warning);
     }
 
     /**
@@ -37,7 +74,8 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        //
+        $blogs = Blog::orderByDesc('id')->get();
+        return view('admin.blogs.show', compact('blog', 'blogs'));
     }
 
     /**
@@ -45,7 +83,8 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        //
+        $blogs = Blog::orderByDesc('id')->get();
+        return view('admin.blogs.edit', compact('blog', 'blogs'));
     }
 
     /**
@@ -53,7 +92,41 @@ class BlogController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        //
+            $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            
+            'published_at' => 'required|date',
+            'author' => 'required',
+        ]);
+
+        $blog->title = $request->title;
+        $blog->content = $request->content;
+        $blog->published_at = $request->published_at;
+        $blog->author = $request->author;
+
+        $warning = null;
+
+    if ($request->hasFile('image')) {
+        $file = $request->file('image');
+
+        // Check size in KB
+        if ($file->getSize() > 295 * 1024) {
+            $warning = "Image size should be less than 295 KB.";
+            return redirect()->back()->withInput()->with('warning', $warning);
+        }
+       
+
+        // If no warnings, store image
+        if (!$warning) {
+            $imagePath = $file->store('blogs', 'public');
+            $blog->image_url = 'storage/' . $imagePath;
+        }
+    }
+
+        $blog->save();
+
+        return redirect()->route('admin.blogs.index')->with('success', 'Blog updated successfully')->with('warning', $warning);
     }
 
     /**
@@ -61,6 +134,7 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        //
+        $blog->delete();
+        return redirect()->route('admin.blogs.index')->with('success', 'Blog deleted successfully');
     }
 }

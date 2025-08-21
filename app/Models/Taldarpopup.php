@@ -12,6 +12,7 @@ class Taldarpopup extends Model
         'content',
         'link',
         'is_active',
+        
     ];
 
     use SoftDeletes;

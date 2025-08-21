@@ -118,7 +118,7 @@
                 <span>{{ \Carbon\Carbon::parse($blog->published_at)->format('F d, Y') }} - {{ $blog->title }}</span>
                 <h4>
                     <a href="{{ route('blog-details', $blog->id) }}">
-                        {{ Str::limit($blog->content, 60) }}
+                        {{ Str::limit($blog->heading, 60) }}
                     </a>
                 </h4>
             </div>

@@ -93,8 +93,9 @@
                             </div>
                             <div class="blog-details-contact">
                                 <span>{{ \Carbon\Carbon::parse($blog->published_at)->format('F d, Y') }} - {{ $blog->title }}</span>
-                                <h4><a href="blog-details.html">{{ $blog->title }}</a>
+                                <h4><a href="blog-details.html">{{ $blog->heading }}</a>
                                 </h4>
+                                {{-- <h2>{{ Str::limit($blog->heading, 60) }}</h2> --}}
                                 <p>{{ $blog->content }}</p>
 
                                
@@ -116,16 +117,17 @@
                         <div class="rx-recent-post">
                             <h5 class="sub-title">Recent Posts</h5>
                             <div class="recent-inner-post">
+                                @foreach ($blogs as $blog)
                                 <div class="recent-post-cart">
                                     <div class="post-img">
-                                        <img src="{{ asset('assets/img/blog/1.jpg') }}" alt="blog-1">
+                                        <img src="{{ asset($blog->image_url) }}" alt="blog-1">
                                     </div>
                                     <div class="post-contact">
-                                        <span>June 28, 2024 - Restaurant</span>
-                                        <h4><a href="blog-details.html">Best way to solve business deal issue in
-                                                market.</a></h4>
+                                        <span>{{ \Carbon\Carbon::parse($blog->published_at)->format('F d, Y') }} - {{ $blog->title }}</span>
+                                        <h4><a href="{{ route('blog-details', $blog->id) }}">{{ $blog->heading }}</a></h4>
                                     </div>
                                 </div>
+                                @endforeach
                                 <div class="recent-post-cart">
                                     <div class="post-img">
                                         <img src="{{ asset('assets/img/blog/2.jpg') }}" alt="blog-2">

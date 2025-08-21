@@ -354,6 +354,35 @@
     <!-- main-js -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
     
+    <script>
+        $(document).ready(function(){
+            // Initialize Owl Carousel for blog slider
+            $('.rx-blog-slider').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 3
+                    }
+                },
+                navText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>']
+            });
+        });
+    </script>
 </body>
 
 

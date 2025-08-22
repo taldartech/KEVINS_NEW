@@ -30,6 +30,12 @@
 
 </head>
 <style>
+    .fixed-blog-img img {
+        width: 696px;
+        height: 464px;
+        object-fit: cover; /* keeps aspect ratio without distortion */
+        border-radius: 8px; /* optional for rounded corners */
+    }
 
 .recent-inner-post {
     max-height: 500px; /* adjust this height based on your design */
@@ -106,7 +112,7 @@
                 <div class="col-lg-8 col-12 mb-24" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="rx-blog-details">
                         <div class="rx-blog-details-cart">
-                            <div class="blog-details-img">
+                            <div class="blog-details-img fixed-blog-img">
                                 <img src="{{ asset($blog->image_url) }}" alt="details-1">
                             </div>
                             <div class="blog-details-contact">

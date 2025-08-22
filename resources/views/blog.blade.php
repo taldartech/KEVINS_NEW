@@ -330,19 +330,19 @@ $('.rx-blog-slider').trigger('destroy.owl.carousel');
 
 // Re-initialize with proper responsive settings
 $('.rx-blog-slider').owlCarousel({
-    loop: blogCount > 1, // only loop if more than 1
+    loop: false, // only loop if more than 1
     margin: 30,
-    nav: blogCount > 1,
-    dots: blogCount > 1,
-    autoplay: blogCount > 1,
+    nav: true,
+    dots: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    responsive: {
-        0: { items: 1 },      // mobile
-        576: { items: 2 },    // small tablets
-        992: { items: 3 },    // desktop
-        1200: { items: 3 }    // large desktop
-    },
+    // responsive: {
+    //     0: { items: 1 },      // mobile
+    //     576: { items: 2 },    // small tablets
+    //     992: { items: 3 },    // desktop
+    //     1200: { items: 3 }    // large desktop
+    // },
     navText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>']
 });
     });

@@ -24,7 +24,12 @@ class AppServiceProvider extends ServiceProvider
         
         View::composer('*', function ($view) {
             $activePopup = Taldarpopup::where('is_active', 1)->first();
-            $view->with('activePopup', $activePopup);
+            $latestRooms = \App\Models\Room::orderByDesc('id')->get();
+            $view->with([
+                'activePopup' => $activePopup,
+                'rooms' => $latestRooms,
+            ]);
+    
         });
     }
 }

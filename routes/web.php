@@ -9,10 +9,10 @@ use App\Models\Review;
 use App\Models\Blog;
 
 Route::get('/', function () {
-    $rooms = Room::orderByDesc('id')->get();
+    // $rooms = Room::orderByDesc('id')->get();
     $reviews = Review::orderByDesc('id')->get();
     
-    return view('index', compact('rooms', 'reviews'));
+    return view('index', compact( 'reviews'));
 })->name('home');
 
 Route::get('/dashboard', function () {
@@ -20,9 +20,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/rooms-details/{id}', function ($id) {
-    $rooms = Room::orderByDesc('id')->get();
     $room = Room::findOrFail($id);
-    return view('rooms-details', compact('room', 'rooms'));
+    return view('rooms-details', compact('room'));
 })->name('rooms-details');
 
 Route::middleware('auth')->group(function () {
@@ -49,76 +48,62 @@ Route::get('/restaurants', function () {
 
 Route::get('/tour-packages', function () {
     $tourPackages = TourPackage::orderByDesc('id')->get();
-    $rooms = Room::orderByDesc('id')->get();
-    return view('tour-packages', compact('tourPackages', 'rooms'));
+    return view('tour-packages', compact('tourPackages'));
 })->name('tour-packages');
 
 Route::get('/blog', function () {
     $blogs = Blog::orderByDesc('id')->get();
-    $rooms = Room::orderByDesc('id')->get();
-    return view('blog', compact('blogs', 'rooms'));
+    return view('blog', compact('blogs'));
 })->name('blog');
 
 Route::get('/contact', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('contact', compact('rooms'));
+    return view('contact');
 })->name('contact');
 
 Route::get('/blog-details/{id}', function ($id) {
     $blogs = Blog::orderByDesc('id')->get();
     $blog = Blog::findOrFail($id);
-    $rooms = Room::orderByDesc('id')->get();
-    return view('blog-details', compact('blogs', 'blog', 'rooms'));
+    return view('blog-details', compact('blogs', 'blog'));
 })->name('blog-details');
 
 Route::get('/about', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('about', compact('rooms'));
+    return view('about');
 })->name('about');
 
 Route::get('/nearby-attractions', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('nearby-attractions', compact('rooms'));
+    return view('nearby-attractions');
 })->name('nearby-attractions');
 
 Route::get('/historical-places', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('historical-places', compact('rooms'));
+    return view('historical-places');
 })->name('historical-places');
 
 Route::get('/deluxe-room', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('deluxe-room', compact('rooms'));
+    return view('deluxe-room');
 })->name('deluxe-room');
 
 Route::get('/standard-room', function (){
-    $rooms = Room::orderByDesc('id')->get();
-    return view('standard-room', compact('rooms'));
+    return view('standard-room');
 })->name('standard-room');
 
 Route::get('/terms', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('terms', compact('rooms'));
+    return view('terms');
 })->name('terms');
 
 Route::get('/refund-policy', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('refund-policy', compact('rooms'));
+    return view('refund-policy');
 })->name('refund-policy');
 
 Route::get('/faq', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('faq', compact('rooms'));
+    return view('faq');
 })->name('faq');
 
 Route::get('/privacy-policy', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('privacy-policy', compact('rooms'));
+    return view('privacy-policy');
 })->name('privacy-policy');
 
 Route::get('/disclaimer', function () {
-    $rooms = Room::orderByDesc('id')->get();
-    return view('disclaimer', compact('rooms'));
+    return view('disclaimer');
 })->name('disclaimer');
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {

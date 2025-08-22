@@ -1,0 +1,18 @@
+# Files and folders to exclude from deployment to shared hosting
+node_modules/
+.DS_Store
+.idea/
+.vscode/
+.env.example
+.env.backup
+storage/logs/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+tests/
+.git/
+.gitignore
+composer.lock
+package-lock.json
+npm-debug.log
+dist/

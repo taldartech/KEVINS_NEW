@@ -116,78 +116,8 @@
                     </div>
                 </div>
             @endforeach
-                <!-- Package 3 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="tour-package-card">
-                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="Port Blair City Tour" class="tour-img">
-                        <div class="p-4">
-                            <div class="tour-title">Port Blair City Tour</div>
-                            <div class="tour-desc">Half / Full Day</div>
-                            <ul class="tour-list">
-                                <li>Cellular Jail & Light Show</li>
-                                <li>Corbyn’s Cove Beach</li>
-                                <li>Anthropological Museum</li>
-                                <li>Local shopping stops</li>
-                            </ul>
-                            <div class="tour-price mb-3 ">From ₹2,000 per person</div>
-                            <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20Port%20Blair%20City%20Tour" class="tour-inquiry-btn mt-3">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Package 4 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="tour-package-card">
-                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="Baratang Island Tour" class="tour-img">
-                        <div class="p-4">
-                            <div class="tour-title">Baratang Island Adventure</div>
-                            <div class="tour-desc">1 Day Trip</div>
-                            <ul class="tour-list">
-                                <li>Limestone caves</li>
-                                <li>Mud volcano</li>
-                                <li>Jarawa reserve drive</li>
-                                <li>Breakfast & lunch included</li>
-                            </ul>
-                            <div class="tour-price mb-3 ">From ₹4,500 per person</div>
-                            <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20Baratang%20Island" class="tour-inquiry-btn mt-3">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Package 5 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="tour-package-card">
-                        <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="3 Island Special" class="tour-img">
-                        <div class="p-4">
-                            <div class="tour-title">3 Island Special</div>
-                            <div class="tour-desc">2 Days</div>
-                            <ul class="tour-list">
-                                <li>Havelock, Neil & Ross Islands</li>
-                                <li>All transfers & sightseeing</li>
-                                <li>Accommodation included</li>
-                                <li>Breakfast & select meals</li>
-                            </ul>
-                            <div class="tour-price mb-3 ">From ₹16,000 per person</div>
-                            <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%203%20Island%20Special" class="tour-inquiry-btn mt-3">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Package 6 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="tour-package-card">
-                    <img src="{{ asset('assets/img/mount-manipur.jpg') }}" alt="Custom Andaman Tour" class="tour-img">
-                        <div class="p-4">
-                            <div class="tour-title">Custom Andaman Tour</div>
-                            <div class="tour-desc">Tailored for you</div>
-                            <ul class="tour-list">
-                                <li>Personalized itinerary</li>
-                                <li>Family, honeymoon, or group</li>
-                                <li>Expert local guides</li>
-                                <li>Flexible duration & budget</li>
-                            </ul>
-                            <div class="tour-price mb-3 ">On Request</div>
-                            <a href="mailto:kevinsandaman@gmail.com?subject=Tour%20Package%20Inquiry:%20Custom%20Andaman%20Tour" class="tour-inquiry-btn mt-3">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
+            
+               
             </div>
         </div>
     </section>

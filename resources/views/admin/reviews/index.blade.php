@@ -14,7 +14,7 @@
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>Sr. No</th>
                 <th>Author</th>
                 <th>Content</th>
                 <th>Rating</th>
@@ -27,7 +27,7 @@
         <tbody>
         @forelse($reviews as $review)
             <tr>
-                <td>{{ $review->id }}</td>
+                <td>{{ $loop->iteration }}</td>
                 <td>{{ $review->author }}</td>
                 <td>{{ Str::limit($review->content, 50) }}</td>
                 <td>{{ $review->rating }}/5</td>

@@ -11,7 +11,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('admin.tour-packages.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.rooms.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
+                        <a href="{{ route('admin.tour-packages.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.tour-packages.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10V6a2 2 0 012-2h12a2 2 0 012 2v4M4 10v10a2 2 0 002 2h12a2 2 0 002-2V10M4 10h16" /></svg>
                             Special Tour Packages
                         </a>
@@ -35,17 +35,29 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{{ route('admin.galleries.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.galleries.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m4 4h1v-4h1m-7 4H5v-4h1m12 4h1v-4h1" /></svg>
+                            Gallery
+                        </a>
+                    </li>
+                    {{-- <li>
                         <a href="{{ route('admin.galleries.index') }}" @click.prevent="tab = 'gallery'" :class="tab === 'gallery' ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700'" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7zm0 0l7 7 4-4 5 5" /></svg>
                             Gallery
                         </a>
-                    </li>
+                    </li> --}}
                     <li>
+                        <a href="{{ route('admin.blogs.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.blogs.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10V6a2 2 0 012-2h12a2 2 0 012 2v4M4 10v10a2 2 0 002 2h12a2 2 0 002-2V10M4 10h16" /></svg>
+                            Blog Section
+                        </a>
+                    </li>
+                    {{-- <li>
                         <a href="#" @click.prevent="tab = 'blog'" :class="tab === 'blog' ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700'" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z" /></svg>
                             Blog Section
                         </a>
-                    </li>
+                    </li> --}}
                     {{-- <li>
                         <a href="#" @click.prevent="tab = 'reviews'" :class="tab === 'reviews' ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700'" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.036 6.29a1 1 0 00.95.69h6.631c.969 0 1.371 1.24.588 1.81l-5.37 3.905a1 1 0 00-.364 1.118l2.036 6.29c.3.921-.755 1.688-1.54 1.118l-5.37-3.905a1 1 0 00-1.175 0l-5.37 3.905c-.784.57-1.838-.197-1.54-1.118l2.036-6.29a1 1 0 00-.364-1.118L2.293 11.717c-.783-.57-.38-1.81.588-1.81h6.631a1 1 0 00.95-.69l2.036-6.29z" /></svg>

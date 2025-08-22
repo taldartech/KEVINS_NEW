@@ -29,6 +29,24 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 </head>
+<style>
+
+.recent-inner-post {
+    max-height: 500px; /* adjust this height based on your design */
+    overflow-y: auto;
+    padding-right: 10px; /* avoid content being hidden behind scrollbar */
+}
+
+/* Optional: make scrollbar look nicer */
+.recent-inner-post::-webkit-scrollbar {
+    width: 6px;
+}
+
+.recent-inner-post::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+    </style>
 
 <body>
 
@@ -93,7 +111,7 @@
                             </div>
                             <div class="blog-details-contact">
                                 <span>{{ \Carbon\Carbon::parse($blog->published_at)->format('F d, Y') }} - {{ $blog->title }}</span>
-                                <h4><a href="blog-details.html">{{ $blog->heading }}</a>
+                                <h4><a href="{{ route('blog-details', $blog->id) }}">{{ $blog->heading }}</a>
                                 </h4>
                                 {{-- <h2>{{ Str::limit($blog->heading, 60) }}</h2> --}}
                                 <p>{{ $blog->content }}</p>
@@ -155,6 +173,7 @@
                                         <h4><a href="blog-details.html">customer service stats know in 2019.</a></h4>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                         {{-- <div class="rx-popular-tags">

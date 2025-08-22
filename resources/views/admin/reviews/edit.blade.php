@@ -23,14 +23,23 @@
                 <div class="mb-3">
                     <label for="author" class="form-label">Author</label>
                     <input type="text" name="author" id="author" class="form-control" required value="{{ $review->author }}">
+                    @error('author')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label for="content" class="form-label">Content</label>
                     <textarea name="content" id="content" class="form-control" rows="4" required>{{ $review->content }}</textarea>
+                    @error('content')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label for="rating" class="form-label">Rating (1–5)</label>
                     <input type="number" name="rating" id="rating" min="1" max="5" class="form-control" required value="{{ $review->rating }}">
+                    @error('rating')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label for="approved" class="form-label">Approved</label>

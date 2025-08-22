@@ -322,33 +322,57 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
     
     <script>
-        $(document).ready(function(){
+         $(document).ready(function(){
+            var blogCount = $('.rx-blog-slider .rx-blog-card').length;
+
+// Destroy any previous Owl Carousel initialization
+$('.rx-blog-slider').trigger('destroy.owl.carousel');
+
+// Re-initialize with proper responsive settings
+$('.rx-blog-slider').owlCarousel({
+    loop: blogCount > 1, // only loop if more than 1
+    margin: 30,
+    nav: blogCount > 1,
+    dots: blogCount > 1,
+    autoplay: blogCount > 1,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: { items: 1 },      // mobile
+        576: { items: 2 },    // small tablets
+        992: { items: 3 },    // desktop
+        1200: { items: 3 }    // large desktop
+    },
+    navText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>']
+});
+    });
+        // $(document).ready(function(){
             // Initialize Owl Carousel for blog slider
-            $('.rx-blog-slider').owlCarousel({
-                loop: true,
-                margin: 30,
-                nav: true,
-                dots: false,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    992: {
-                        items: 3
-                    },
-                    1200: {
-                        items: 3
-                    }
-                },
-                navText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>']
-            });
-        });
+            // $('.rx-blog-slider').owlCarousel({
+            //     loop: true,
+            //     margin: 30,
+            //     nav: true,
+            //     dots: false,
+            //     autoplay: true,
+            //     autoplayTimeout: 3000,
+            //     autoplayHoverPause: true,
+            //     responsive: {
+            //         0: {
+            //             items: 1
+            //         },
+            //         576: {
+            //             items: 2
+            //         },
+            //         992: {
+            //             items: 3
+            //         },
+            //         1200: {
+            //             items: 3
+            //         }
+            //     },
+            //     navText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>']
+            // });
+    // });
     </script>
 </body>
 

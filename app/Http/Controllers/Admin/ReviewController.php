@@ -31,7 +31,7 @@ class ReviewController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'author' => 'required|string|max:10',
+            'author' => 'required|string|max:20',
             'content' => 'required|string|max:150',
             'rating' => 'required|numeric|max:5',
             'approved' => 'required|boolean',
@@ -67,7 +67,7 @@ class ReviewController extends Controller
     public function update(Request $request, Review $review)
     {
         $validated = $request->validate([
-            'author' => 'required|string|max:10',
+            'author' => 'required|string|max:20',
             'content' => 'required|string|max:150',
             'rating' => 'required|numeric|max:5',
             'approved' => 'required|boolean',

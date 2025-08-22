@@ -953,8 +953,7 @@ ensuring your Andaman story begins in the best possible way.
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="review-card p-4 h-100 shadow-sm bg-white rounded">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="{{ asset('assets/img/avatar1.png') }}" 
-                                 alt="Guest" class="rounded-circle me-3" width="48" height="48">
+                        
                             <div>
                                 <h6 class="mb-0">{{ $review->author }}</h6>
                                 <div class="text-warning small">
@@ -980,8 +979,7 @@ ensuring your Andaman story begins in the best possible way.
                                 <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="review-card p-4 h-100 shadow-sm bg-white rounded">
                                         <div class="d-flex align-items-center mb-3">
-                                            <img src="{{ asset('assets/img/avatar1.png') }}" 
-                                                 alt="Guest" class="rounded-circle me-3" width="48" height="48">
+                                            
                                             <div>
                                                 <h6 class="mb-0">{{ $review->author }}</h6>
                                                 <div class="text-warning small">

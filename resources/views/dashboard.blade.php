@@ -28,12 +28,12 @@
                             Tour Packages
                         </a>
                     </li> --}}
-                    <li>
+                    {{-- <li>
                         <a href="#" @click.prevent="tab = 'places'" :class="tab === 'places' ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700'" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 0v6m0 0l-3 3m3-3l3 3" /></svg>
                             Places to Visit
                         </a>
-                    </li>
+                    </li> --}}
                     <li>
                         <a href="{{ route('admin.galleries.index') }}" class="flex items-center gap-3 px-4 py-2 rounded-lg transition-all hover:bg-blue-100 {{ request()->routeIs('admin.galleries.*') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-gray-700' }}">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m4 4h1v-4h1m-7 4H5v-4h1m12 4h1v-4h1" /></svg>
